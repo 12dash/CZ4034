@@ -1,0 +1,448 @@
+2020-03-19 12:43:47.005 INFO  (main) [   ] o.e.j.u.log Logging initialized @1216ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-03-19 12:43:47.145 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2020-03-19 12:43:47.145 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.server.ServerConnector.setSoLingerTime(int) in file:///C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/server/etc/jetty-http.xml
+2020-03-19 12:43:47.150 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 11.0.4+10-LTS
+2020-03-19 12:43:47.168 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/server/contexts/] at interval 0
+2020-03-19 12:43:47.723 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-03-19 12:43:47.737 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-03-19 12:43:47.737 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-03-19 12:43:47.739 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2020-03-19 12:43:47.814 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-03-19 12:43:47.818 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.4.1
+2020-03-19 12:43:47.818 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2020-03-19 12:43:47.818 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr
+2020-03-19 12:43:47.818 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-03-19T12:43:47.818480900Z
+2020-03-19 12:43:47.851 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr
+2020-03-19 12:43:47.857 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\solr.xml
+2020-03-19 12:43:47.913 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@14bee915, but no JMX reporters were configured - adding default JMX reporter.
+2020-03-19 12:43:48.533 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2020-03-19 12:43:48.688 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@35cd68d4[provider=null,keyStore=null,trustStore=null]
+2020-03-19 12:43:48.688 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@35cd68d4[provider=null,keyStore=null,trustStore=null]
+2020-03-19 12:43:48.853 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@4649d70a[provider=null,keyStore=null,trustStore=null]
+2020-03-19 12:43:48.853 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@4649d70a[provider=null,keyStore=null,trustStore=null]
+2020-03-19 12:43:48.873 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2020-03-19 12:43:53.679 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2020-03-19 12:43:53.681 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2020-03-19 12:43:53.737 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@14bee915
+2020-03-19 12:43:53.737 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@14bee915
+2020-03-19 12:43:53.740 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@14bee915
+2020-03-19 12:43:53.765 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr
+2020-03-19 12:43:53.995 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@6e57e95e{/solr,file:///C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server/solr-webapp/webapp}
+2020-03-19 12:43:54.004 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@4264b240{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-03-19 12:43:54.004 INFO  (main) [   ] o.e.j.s.Server Started @8218ms
+2020-03-19 12:43:56.164 INFO  (qtp1615801298-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=45
+2020-03-19 12:44:00.491 INFO  (qtp1615801298-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1584621840341} status=0 QTime=0
+2020-03-19 12:44:00.527 INFO  (qtp1615801298-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584621840341} status=0 QTime=36
+2020-03-19 12:44:00.553 INFO  (qtp1615801298-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584621840341} status=0 QTime=22
+2020-03-19 12:44:06.736 INFO  (qtp1615801298-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=21
+2020-03-19 12:44:06.752 INFO  (qtp1615801298-22) [   x:tweets] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=tweets&action=STATUS&wt=json} status=0 QTime=0
+2020-03-19 12:44:06.846 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.h.a.CoreAdminOperation core create command name=tweets&action=CREATE&instanceDir=tweets&wt=json
+2020-03-19 12:44:06.892 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.c.SolrResourceLoader [tweets] Added 61 libs to classloader, from paths: [/C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/contrib/clustering/lib, /C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/contrib/extraction/lib, /C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/contrib/langid/lib, /C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/contrib/velocity/lib, /C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/dist]
+2020-03-19 12:44:07.111 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.4.1
+2020-03-19 12:44:07.142 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2020-03-19 12:44:07.299 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.s.IndexSchema [tweets] Schema name=example
+2020-03-19 12:44:07.752 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+2020-03-19 12:44:07.752 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+2020-03-19 12:44:07.752 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2020-03-19 12:44:07.752 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2020-03-19 12:44:07.767 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.s.IndexSchema Loaded schema example/1.6 with uniqueid field id
+2020-03-19 12:44:07.767 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2020-03-19 12:44:07.767 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2020-03-19 12:44:07.767 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2020-03-19 12:44:07.767 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2020-03-19 12:44:07.814 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.c.CoreContainer Creating SolrCore 'tweets' using configuration from instancedir C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets, trusted=true
+2020-03-19 12:44:07.814 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.tweets' (registry 'solr.core.tweets') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@14bee915
+2020-03-19 12:44:07.830 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.c.SolrCore [[tweets] ] Opening new SolrCore at [C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets], dataDir=[C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets\data\]
+2020-03-19 12:44:07.908 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-03-19 12:44:13.001 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-03-19 12:44:13.001 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-03-19 12:44:13.017 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-03-19 12:44:13.017 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-03-19 12:44:13.032 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.s.SolrIndexSearcher Opening [Searcher@21fbd4c6[tweets] main]
+2020-03-19 12:44:13.032 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets\conf
+2020-03-19 12:44:13.032 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _rest_managed.json using file:dir=C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets\conf
+2020-03-19 12:44:13.032 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.r.ManagedResource Loaded initArgs {} for /rest/managed
+2020-03-19 12:44:13.032 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_stopwords_english.json using file:dir=C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets\conf
+2020-03-19 12:44:13.032 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true} for /schema/analysis/stopwords/english
+2020-03-19 12:44:13.032 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.r.s.a.ManagedWordSetResource Loaded 35 words for /schema/analysis/stopwords/english
+2020-03-19 12:44:13.032 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.r.ManagedResource Notified 2 observers of /schema/analysis/stopwords/english
+2020-03-19 12:44:13.032 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_synonyms_english.json using file:dir=C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets\conf
+2020-03-19 12:44:13.032 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true,format=solr} for /schema/analysis/synonyms/english
+2020-03-19 12:44:13.032 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.r.s.a.ManagedSynonymGraphFilterFactory Loaded 3 synonym mappings for /schema/analysis/synonyms/english
+2020-03-19 12:44:13.032 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.r.ManagedResource Notified 2 observers of /schema/analysis/synonyms/english
+2020-03-19 12:44:13.048 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-03-19 12:44:13.048 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-03-19 12:44:13.064 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2020-03-19 12:44:13.064 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+2020-03-19 12:44:13.079 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+2020-03-19 12:44:13.079 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets\conf\elevate.xml
+2020-03-19 12:44:13.079 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-03-19 12:44:13.079 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1661596444214165504
+2020-03-19 12:44:13.095 INFO  (searcherExecutor-10-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@21fbd4c6[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-03-19 12:44:13.095 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=tweets&action=CREATE&instanceDir=tweets&wt=json} status=0 QTime=6251
+2020-03-19 12:44:13.142 INFO  (searcherExecutor-10-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=40
+2020-03-19 12:44:13.142 INFO  (searcherExecutor-10-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-03-19 12:44:13.142 INFO  (searcherExecutor-10-thread-1-processing-x:tweets) [   x:tweets] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-03-19 12:44:13.142 INFO  (searcherExecutor-10-thread-1-processing-x:tweets) [   x:tweets] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2020-03-19 12:44:13.142 INFO  (searcherExecutor-10-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.SolrCore [tweets] Registered new searcher Searcher@21fbd4c6[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-03-19 12:45:34.357 INFO  (qtp1615801298-25) [   x:tweets] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1661596529440325632,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2020-03-19 12:45:34.357 INFO  (qtp1615801298-25) [   x:tweets] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2020-03-19 12:45:34.373 INFO  (qtp1615801298-25) [   x:tweets] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-03-19 12:45:34.373 INFO  (qtp1615801298-25) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={commit=true}{commit=} 0 12
+2020-03-19 12:45:58.883 INFO  (qtp1615801298-24) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={}{} 0 5
+2020-03-19 12:45:58.883 ERROR (qtp1615801298-24) [   x:tweets] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Unknown command 'created_at' at [13]
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.processUpdate(JsonLoader.java:175)
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.load(JsonLoader.java:121)
+	at org.apache.solr.handler.loader.JsonLoader.load(JsonLoader.java:84)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:799)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:578)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:419)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2020-03-19 12:45:59.789 INFO  (qtp1615801298-18) [   x:tweets] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1661596556107710464,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2020-03-19 12:45:59.789 INFO  (qtp1615801298-18) [   x:tweets] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2020-03-19 12:45:59.789 INFO  (qtp1615801298-18) [   x:tweets] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-03-19 12:45:59.789 INFO  (qtp1615801298-18) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={commit=true}{commit=} 0 1
+2020-03-19 12:46:43.881 INFO  (qtp1615801298-26) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={}{} 0 4
+2020-03-19 12:46:43.881 ERROR (qtp1615801298-26) [   x:tweets] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: ERROR: [doc=1238134987230150656] unknown field 'keyword'
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:226)
+	at org.apache.solr.update.AddUpdateCommand.getLuceneDocument(AddUpdateCommand.java:109)
+	at org.apache.solr.update.DirectUpdateHandler2.updateDocOrDocValues(DirectUpdateHandler2.java:975)
+	at org.apache.solr.update.DirectUpdateHandler2.doNormalUpdate(DirectUpdateHandler2.java:345)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc0(DirectUpdateHandler2.java:292)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:239)
+	at org.apache.solr.update.processor.RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:76)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:259)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doVersionAdd(DistributedUpdateProcessor.java:489)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.lambda$versionAdd$0(DistributedUpdateProcessor.java:339)
+	at org.apache.solr.update.VersionBucket.runWithLock(VersionBucket.java:50)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:339)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:225)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.handleAdds(JsonLoader.java:507)
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.processUpdate(JsonLoader.java:145)
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.load(JsonLoader.java:121)
+	at org.apache.solr.handler.loader.JsonLoader.load(JsonLoader.java:84)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:799)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:578)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:419)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2020-03-19 12:46:43.918 INFO  (qtp1615801298-22) [   x:tweets] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1661596602380320768,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2020-03-19 12:46:43.918 INFO  (qtp1615801298-22) [   x:tweets] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2020-03-19 12:46:43.918 INFO  (qtp1615801298-22) [   x:tweets] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-03-19 12:46:43.918 INFO  (qtp1615801298-22) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={commit=true}{commit=} 0 2
+2020-03-19 12:49:34.285 INFO  (qtp1615801298-19) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={}{} 0 0
+2020-03-19 12:49:34.285 ERROR (qtp1615801298-19) [   x:tweets] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: ERROR: [doc=1238134987230150656] unknown field 'keyword'
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:226)
+	at org.apache.solr.update.AddUpdateCommand.getLuceneDocument(AddUpdateCommand.java:109)
+	at org.apache.solr.update.DirectUpdateHandler2.updateDocOrDocValues(DirectUpdateHandler2.java:975)
+	at org.apache.solr.update.DirectUpdateHandler2.doNormalUpdate(DirectUpdateHandler2.java:345)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc0(DirectUpdateHandler2.java:292)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:239)
+	at org.apache.solr.update.processor.RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:76)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:259)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doVersionAdd(DistributedUpdateProcessor.java:489)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.lambda$versionAdd$0(DistributedUpdateProcessor.java:339)
+	at org.apache.solr.update.VersionBucket.runWithLock(VersionBucket.java:50)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:339)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:225)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.handleAdds(JsonLoader.java:507)
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.processUpdate(JsonLoader.java:145)
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.load(JsonLoader.java:121)
+	at org.apache.solr.handler.loader.JsonLoader.load(JsonLoader.java:84)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:799)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:578)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:419)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2020-03-19 12:49:34.317 INFO  (qtp1615801298-24) [   x:tweets] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1661596781056622592,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2020-03-19 12:49:34.317 INFO  (qtp1615801298-24) [   x:tweets] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2020-03-19 12:49:34.317 INFO  (qtp1615801298-24) [   x:tweets] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-03-19 12:49:34.317 INFO  (qtp1615801298-24) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={commit=true}{commit=} 0 3
+2020-03-19 12:50:01.769 INFO  (qtp1615801298-20) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={}{} 0 0
+2020-03-19 12:50:01.769 ERROR (qtp1615801298-20) [   x:tweets] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Unknown command 'created_at' at [13]
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.processUpdate(JsonLoader.java:175)
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.load(JsonLoader.java:121)
+	at org.apache.solr.handler.loader.JsonLoader.load(JsonLoader.java:84)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:799)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:578)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:419)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2020-03-19 12:50:02.742 INFO  (qtp1615801298-19) [   x:tweets] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1661596810862395392,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2020-03-19 12:50:02.742 INFO  (qtp1615801298-19) [   x:tweets] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2020-03-19 12:50:02.742 INFO  (qtp1615801298-19) [   x:tweets] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-03-19 12:50:02.742 INFO  (qtp1615801298-19) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={commit=true}{commit=} 0 0
+2020-03-19 12:52:02.379 INFO  (qtp1615801298-21) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={}{} 0 0
+2020-03-19 12:52:02.379 ERROR (qtp1615801298-21) [   x:tweets] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Unknown command 'created_at' at [13]
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.processUpdate(JsonLoader.java:175)
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.load(JsonLoader.java:121)
+	at org.apache.solr.handler.loader.JsonLoader.load(JsonLoader.java:84)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:799)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:578)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:419)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2020-03-19 12:52:03.363 INFO  (qtp1615801298-26) [   x:tweets] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1661596937342681088,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2020-03-19 12:52:03.363 INFO  (qtp1615801298-26) [   x:tweets] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2020-03-19 12:52:03.363 INFO  (qtp1615801298-26) [   x:tweets] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-03-19 12:52:03.363 INFO  (qtp1615801298-26) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={commit=true}{commit=} 0 1
+2020-03-19 12:52:50.454 INFO  (qtp1615801298-25) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={}{} 0 0
+2020-03-19 12:52:50.454 ERROR (qtp1615801298-25) [   x:tweets] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Unknown command 'created_at' at [13]
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.processUpdate(JsonLoader.java:175)
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.load(JsonLoader.java:121)
+	at org.apache.solr.handler.loader.JsonLoader.load(JsonLoader.java:84)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:799)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:578)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:419)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2020-03-19 12:52:51.407 INFO  (qtp1615801298-21) [   x:tweets] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1661596987720466432,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2020-03-19 12:52:51.407 INFO  (qtp1615801298-21) [   x:tweets] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2020-03-19 12:52:51.422 INFO  (qtp1615801298-21) [   x:tweets] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-03-19 12:52:51.422 INFO  (qtp1615801298-21) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={commit=true}{commit=} 0 2
+2020-03-19 12:53:10.763 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@4264b240{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-03-19 12:53:10.763 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2020-03-19 12:53:10.763 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=982634822
+2020-03-19 12:53:10.763 INFO  (coreCloseExecutor-15-thread-1) [   x:tweets] o.a.s.c.SolrCore [tweets]  CLOSING SolrCore org.apache.solr.core.SolrCore@40018728
+2020-03-19 12:53:10.763 INFO  (coreCloseExecutor-15-thread-1) [   x:tweets] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.tweets, tag=SolrCore@40018728
+2020-03-19 12:53:10.763 INFO  (coreCloseExecutor-15-thread-1) [   x:tweets] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@ee71fac: rootName = null, domain = solr.core.tweets, service url = null, agent id = null] for registry solr.core.tweets / com.codahale.metrics.MetricRegistry@2851b0ff
+2020-03-19 12:53:10.794 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2020-03-19 12:53:10.794 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@95eb320: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@5e0708a0
+2020-03-19 12:53:10.794 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2020-03-19 12:53:10.794 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@a22c4d8: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@29c99261
+2020-03-19 12:53:10.794 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2020-03-19 12:53:10.794 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@45cd7bc5: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@7508ea35
+2020-03-19 12:53:10.810 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@6e57e95e{/solr,null,UNAVAILABLE}{C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server/solr-webapp/webapp}

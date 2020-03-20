@@ -1,90 +1,75 @@
-2020-03-19 13:05:11.320 INFO  (main) [   ] o.e.j.u.log Logging initialized @1138ms to org.eclipse.jetty.util.log.Slf4jLog
-2020-03-19 13:05:11.461 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
-2020-03-19 13:05:11.461 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.server.ServerConnector.setSoLingerTime(int) in file:///C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/server/etc/jetty-http.xml
-2020-03-19 13:05:11.461 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 11.0.4+10-LTS
-2020-03-19 13:05:11.476 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/server/contexts/] at interval 0
-2020-03-19 13:05:12.023 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2020-03-19 13:05:12.039 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2020-03-19 13:05:12.039 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2020-03-19 13:05:12.039 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
-2020-03-19 13:05:12.101 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2020-03-19 13:05:12.101 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.4.1
-2020-03-19 13:05:12.101 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2020-03-19 13:05:12.101 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr
-2020-03-19 13:05:12.101 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-03-19T13:05:12.101592300Z
-2020-03-19 13:05:12.148 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr
-2020-03-19 13:05:12.164 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\solr.xml
-2020-03-19 13:05:12.210 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@14bee915, but no JMX reporters were configured - adding default JMX reporter.
-2020-03-19 13:05:12.695 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2020-03-19 13:05:12.851 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@602ae7b6[provider=null,keyStore=null,trustStore=null]
-2020-03-19 13:05:12.851 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@602ae7b6[provider=null,keyStore=null,trustStore=null]
-2020-03-19 13:05:13.023 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@6920614[provider=null,keyStore=null,trustStore=null]
-2020-03-19 13:05:13.023 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@6920614[provider=null,keyStore=null,trustStore=null]
-2020-03-19 13:05:13.038 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2020-03-19 13:05:17.870 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2020-03-19 13:05:17.872 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2020-03-19 13:05:17.931 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@14bee915
-2020-03-19 13:05:17.931 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@14bee915
-2020-03-19 13:05:17.935 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@14bee915
-2020-03-19 13:05:17.966 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr
-2020-03-19 13:05:17.966 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [tweets]
-2020-03-19 13:05:18.015 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader [tweets] Added 61 libs to classloader, from paths: [/C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/contrib/clustering/lib, /C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/contrib/extraction/lib, /C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/contrib/langid/lib, /C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/contrib/velocity/lib, /C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/dist]
-2020-03-19 13:05:18.166 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.4.1
-2020-03-19 13:05:18.191 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
-2020-03-19 13:05:18.221 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@6e57e95e{/solr,file:///C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server/solr-webapp/webapp}
-2020-03-19 13:05:18.233 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@4264b240{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
-2020-03-19 13:05:18.234 INFO  (main) [   ] o.e.j.s.Server Started @8041ms
-2020-03-19 13:05:18.293 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.IndexSchema [tweets] Schema name=cz4034-schema
-2020-03-19 13:05:18.334 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.CurrencyField]. Please consult documentation how to replace it accordingly.
-2020-03-19 13:05:18.340 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDateField]. Please consult documentation how to replace it accordingly.
-2020-03-19 13:05:18.344 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDoubleField]. Please consult documentation how to replace it accordingly.
-2020-03-19 13:05:18.346 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieFloatField]. Please consult documentation how to replace it accordingly.
-2020-03-19 13:05:18.349 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieIntField]. Please consult documentation how to replace it accordingly.
-2020-03-19 13:05:18.352 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.LatLonType]. Please consult documentation how to replace it accordingly.
-2020-03-19 13:05:18.384 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieLongField]. Please consult documentation how to replace it accordingly.
-2020-03-19 13:05:18.408 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.SynonymFilterFactory]. Please consult documentation how to replace it accordingly.
-2020-03-19 13:05:18.413 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
-2020-03-19 13:05:18.584 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.IndexSchema Loaded schema cz4034-schema/1.5 with uniqueid field id_str
-2020-03-19 13:05:18.634 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.CoreContainer Creating SolrCore 'tweets' using configuration from instancedir C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets, trusted=true
-2020-03-19 13:05:18.655 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.tweets' (registry 'solr.core.tweets') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@14bee915
-2020-03-19 13:05:18.667 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrCore [[tweets] ] Opening new SolrCore at [C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets], dataDir=[C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets\data\]
-2020-03-19 13:05:18.699 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2020-03-19 13:05:20.560 INFO  (qtp1615801298-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=36
-2020-03-19 13:05:23.069 INFO  (qtp1615801298-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1584623122910} status=0 QTime=1
-2020-03-19 13:05:23.103 INFO  (qtp1615801298-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584623122910} status=0 QTime=34
-2020-03-19 13:05:23.123 INFO  (qtp1615801298-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584623122910} status=0 QTime=24
-2020-03-19 13:05:23.704 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2020-03-19 13:05:23.704 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2020-03-19 13:05:23.706 ERROR (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.u.UpdateLog Unable to use updateLog: _version_ field must exist in schema and be searchable (indexed or docValues) and retrievable(stored or docValues) and not multiValued (_version_ not searchable => org.apache.solr.common.SolrException: _version_ field must exist in schema and be searchable (indexed or docValues) and retrievable(stored or docValues) and not multiValued (_version_ not searchable
-	at org.apache.solr.update.VersionInfo.getAndCheckVersionField(VersionInfo.java:75)
-org.apache.solr.common.SolrException: _version_ field must exist in schema and be searchable (indexed or docValues) and retrievable(stored or docValues) and not multiValued (_version_ not searchable
-	at org.apache.solr.update.VersionInfo.getAndCheckVersionField(VersionInfo.java:75) ~[?:?]
-	at org.apache.solr.update.VersionInfo.<init>(VersionInfo.java:96) ~[?:?]
-	at org.apache.solr.update.UpdateLog.init(UpdateLog.java:404) ~[?:?]
-	at org.apache.solr.update.UpdateHandler.<init>(UpdateHandler.java:139) ~[?:?]
-	at org.apache.solr.update.UpdateHandler.<init>(UpdateHandler.java:112) ~[?:?]
-	at org.apache.solr.update.DirectUpdateHandler2.<init>(DirectUpdateHandler2.java:119) ~[?:?]
-	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
-	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[?:?]
-	at org.apache.solr.core.SolrCore.createInstance(SolrCore.java:831) ~[?:?]
-	at org.apache.solr.core.SolrCore.createUpdateHandler(SolrCore.java:893) ~[?:?]
-	at org.apache.solr.core.SolrCore.initUpdateHandler(SolrCore.java:1149) ~[?:?]
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1011) ~[?:?]
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:901) ~[?:?]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1292) ~[?:?]
-	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:788) ~[?:?]
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.0.5.jar:4.0.5]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:210) ~[?:?]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
-	at java.lang.Thread.run(Thread.java:834) [?:?]
-2020-03-19 13:05:23.706 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrCore [tweets]  CLOSING SolrCore org.apache.solr.core.SolrCore@41376eb6
-2020-03-19 13:05:23.706 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.tweets, tag=SolrCore@41376eb6
-2020-03-19 13:05:23.707 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5e32fb2: rootName = null, domain = solr.core.tweets, service url = null, agent id = null] for registry solr.core.tweets / com.codahale.metrics.MetricRegistry@4a8b2625
-2020-03-19 13:05:23.718 ERROR (coreContainerWorkExecutor-2-thread-1) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be loaded on startup => org.apache.solr.common.SolrException: Unable to create core [tweets]
+2020-03-20 09:37:05.181 INFO  (main) [   ] o.e.j.u.log Logging initialized @1624ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-03-20 09:37:05.377 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2020-03-20 09:37:05.377 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.server.ServerConnector.setSoLingerTime(int) in file:///C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/server/etc/jetty-http.xml
+2020-03-20 09:37:05.385 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 11.0.4+10-LTS
+2020-03-20 09:37:05.408 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/server/contexts/] at interval 0
+2020-03-20 09:37:06.368 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-03-20 09:37:06.393 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-03-20 09:37:06.393 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-03-20 09:37:06.395 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2020-03-20 09:37:06.562 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-03-20 09:37:06.567 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.4.1
+2020-03-20 09:37:06.569 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2020-03-20 09:37:06.569 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr
+2020-03-20 09:37:06.569 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-03-20T09:37:06.569687700Z
+2020-03-20 09:37:06.625 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr
+2020-03-20 09:37:06.635 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\solr.xml
+2020-03-20 09:37:06.733 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@14bee915, but no JMX reporters were configured - adding default JMX reporter.
+2020-03-20 09:37:07.544 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2020-03-20 09:37:07.849 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@2eadc9f6[provider=null,keyStore=null,trustStore=null]
+2020-03-20 09:37:07.849 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@2eadc9f6[provider=null,keyStore=null,trustStore=null]
+2020-03-20 09:37:08.097 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@e5cbff2[provider=null,keyStore=null,trustStore=null]
+2020-03-20 09:37:08.097 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@e5cbff2[provider=null,keyStore=null,trustStore=null]
+2020-03-20 09:37:08.125 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2020-03-20 09:37:13.043 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2020-03-20 09:37:13.046 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2020-03-20 09:37:13.155 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@14bee915
+2020-03-20 09:37:13.155 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@14bee915
+2020-03-20 09:37:13.156 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@14bee915
+2020-03-20 09:37:13.205 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr
+2020-03-20 09:37:13.206 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [tweets]
+2020-03-20 09:37:13.278 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader [tweets] Added 60 libs to classloader, from paths: [/C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/contrib/clustering/lib, /C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/contrib/extraction/lib, /C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/contrib/langid/lib, /C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/contrib/velocity/lib, /C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/dist]
+2020-03-20 09:37:13.536 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.0.0
+2020-03-20 09:37:13.599 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@6e57e95e{/solr,file:///C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server/solr-webapp/webapp}
+2020-03-20 09:37:13.616 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@4264b240{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-03-20 09:37:13.616 INFO  (main) [   ] o.e.j.s.Server Started @10060ms
+2020-03-20 09:37:13.739 ERROR (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.XmlConfigFile Exception during parsing file: schema:org.xml.sax.SAXParseException; systemId: solrres:/managed-schema; lineNumber: 521; columnNumber: 3; The element type "field" must be terminated by the matching end-tag "</field>".
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1685)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2883)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:246)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:140)
+	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:87)
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:458)
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:177)
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:172)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45)
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70)
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:119)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91)
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1341)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1288)
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:788)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:210)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2020-03-20 09:37:13.743 ERROR (coreContainerWorkExecutor-2-thread-1) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be loaded on startup => org.apache.solr.common.SolrException: Unable to create core [tweets]
 	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1313)
 org.apache.solr.common.SolrException: Unable to create core [tweets]
 	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1313) ~[?:?]
@@ -95,440 +80,104 @@ org.apache.solr.common.SolrException: Unable to create core [tweets]
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
 	at java.lang.Thread.run(Thread.java:834) [?:?]
-Caused by: org.apache.solr.common.SolrException: Unable to use updateLog: _version_ field must exist in schema and be searchable (indexed or docValues) and retrievable(stored or docValues) and not multiValued (_version_ not searchable
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1072) ~[?:?]
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:901) ~[?:?]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1292) ~[?:?]
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core tweets: Can't load schema C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets\conf\managed-schema: org.xml.sax.SAXParseException; systemId: solrres:/managed-schema; lineNumber: 521; columnNumber: 3; The element type "field" must be terminated by the matching end-tag "</field>".
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:96) ~[?:?]
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1341) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1288) ~[?:?]
 	... 7 more
-Caused by: org.apache.solr.common.SolrException: Unable to use updateLog: _version_ field must exist in schema and be searchable (indexed or docValues) and retrievable(stored or docValues) and not multiValued (_version_ not searchable
-	at org.apache.solr.update.UpdateLog.init(UpdateLog.java:408) ~[?:?]
-	at org.apache.solr.update.UpdateHandler.<init>(UpdateHandler.java:139) ~[?:?]
-	at org.apache.solr.update.UpdateHandler.<init>(UpdateHandler.java:112) ~[?:?]
-	at org.apache.solr.update.DirectUpdateHandler2.<init>(DirectUpdateHandler2.java:119) ~[?:?]
-	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
-	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[?:?]
-	at org.apache.solr.core.SolrCore.createInstance(SolrCore.java:831) ~[?:?]
-	at org.apache.solr.core.SolrCore.createUpdateHandler(SolrCore.java:893) ~[?:?]
-	at org.apache.solr.core.SolrCore.initUpdateHandler(SolrCore.java:1149) ~[?:?]
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1011) ~[?:?]
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:901) ~[?:?]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1292) ~[?:?]
+Caused by: org.apache.solr.common.SolrException: Can't load schema C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets\conf\managed-schema: org.xml.sax.SAXParseException; systemId: solrres:/managed-schema; lineNumber: 521; columnNumber: 3; The element type "field" must be terminated by the matching end-tag "</field>".
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:597) ~[?:?]
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:177) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:172) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45) ~[?:?]
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:119) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91) ~[?:?]
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1341) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1288) ~[?:?]
 	... 7 more
-Caused by: org.apache.solr.common.SolrException: _version_ field must exist in schema and be searchable (indexed or docValues) and retrievable(stored or docValues) and not multiValued (_version_ not searchable
-	at org.apache.solr.update.VersionInfo.getAndCheckVersionField(VersionInfo.java:75) ~[?:?]
-	at org.apache.solr.update.VersionInfo.<init>(VersionInfo.java:96) ~[?:?]
-	at org.apache.solr.update.UpdateLog.init(UpdateLog.java:404) ~[?:?]
-	at org.apache.solr.update.UpdateHandler.<init>(UpdateHandler.java:139) ~[?:?]
-	at org.apache.solr.update.UpdateHandler.<init>(UpdateHandler.java:112) ~[?:?]
-	at org.apache.solr.update.DirectUpdateHandler2.<init>(DirectUpdateHandler2.java:119) ~[?:?]
-	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
-	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[?:?]
-	at org.apache.solr.core.SolrCore.createInstance(SolrCore.java:831) ~[?:?]
-	at org.apache.solr.core.SolrCore.createUpdateHandler(SolrCore.java:893) ~[?:?]
-	at org.apache.solr.core.SolrCore.initUpdateHandler(SolrCore.java:1149) ~[?:?]
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1011) ~[?:?]
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:901) ~[?:?]
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1292) ~[?:?]
+Caused by: org.apache.solr.common.SolrException: org.xml.sax.SAXParseException; systemId: solrres:/managed-schema; lineNumber: 521; columnNumber: 3; The element type "field" must be terminated by the matching end-tag "</field>".
+	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:151) ~[?:?]
+	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:87) ~[?:?]
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:458) ~[?:?]
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:177) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:172) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45) ~[?:?]
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:119) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91) ~[?:?]
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1341) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1288) ~[?:?]
 	... 7 more
-2020-03-19 13:05:25.179 INFO  (qtp1615801298-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1584623122910} status=0 QTime=0
-2020-03-19 13:05:25.187 ERROR (qtp1615801298-21) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'tweets' is not available due to init failure: Unable to use updateLog: _version_ field must exist in schema and be searchable (indexed or docValues) and retrievable(stored or docValues) and not multiValued (_version_ not searchable
-	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1781)
-	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:253)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:538)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:419)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.Server.handle(Server.java:505)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:132)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.apache.solr.common.SolrException: Unable to use updateLog: _version_ field must exist in schema and be searchable (indexed or docValues) and retrievable(stored or docValues) and not multiValued (_version_ not searchable
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1072)
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:901)
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1292)
-	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:788)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:210)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	... 1 more
-Caused by: org.apache.solr.common.SolrException: Unable to use updateLog: _version_ field must exist in schema and be searchable (indexed or docValues) and retrievable(stored or docValues) and not multiValued (_version_ not searchable
-	at org.apache.solr.update.UpdateLog.init(UpdateLog.java:408)
-	at org.apache.solr.update.UpdateHandler.<init>(UpdateHandler.java:139)
-	at org.apache.solr.update.UpdateHandler.<init>(UpdateHandler.java:112)
-	at org.apache.solr.update.DirectUpdateHandler2.<init>(DirectUpdateHandler2.java:119)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.apache.solr.core.SolrCore.createInstance(SolrCore.java:831)
-	at org.apache.solr.core.SolrCore.createUpdateHandler(SolrCore.java:893)
-	at org.apache.solr.core.SolrCore.initUpdateHandler(SolrCore.java:1149)
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1011)
-	... 9 more
-Caused by: org.apache.solr.common.SolrException: _version_ field must exist in schema and be searchable (indexed or docValues) and retrievable(stored or docValues) and not multiValued (_version_ not searchable
-	at org.apache.solr.update.VersionInfo.getAndCheckVersionField(VersionInfo.java:75)
-	at org.apache.solr.update.VersionInfo.<init>(VersionInfo.java:96)
-	at org.apache.solr.update.UpdateLog.init(UpdateLog.java:404)
-	... 20 more
-
-2020-03-19 13:05:25.187 ERROR (qtp1615801298-25) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'tweets' is not available due to init failure: Unable to use updateLog: _version_ field must exist in schema and be searchable (indexed or docValues) and retrievable(stored or docValues) and not multiValued (_version_ not searchable
-	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1781)
-	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:253)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:538)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:419)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.Server.handle(Server.java:505)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.apache.solr.common.SolrException: Unable to use updateLog: _version_ field must exist in schema and be searchable (indexed or docValues) and retrievable(stored or docValues) and not multiValued (_version_ not searchable
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1072)
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:901)
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1292)
-	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:788)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:210)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	... 1 more
-Caused by: org.apache.solr.common.SolrException: Unable to use updateLog: _version_ field must exist in schema and be searchable (indexed or docValues) and retrievable(stored or docValues) and not multiValued (_version_ not searchable
-	at org.apache.solr.update.UpdateLog.init(UpdateLog.java:408)
-	at org.apache.solr.update.UpdateHandler.<init>(UpdateHandler.java:139)
-	at org.apache.solr.update.UpdateHandler.<init>(UpdateHandler.java:112)
-	at org.apache.solr.update.DirectUpdateHandler2.<init>(DirectUpdateHandler2.java:119)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.apache.solr.core.SolrCore.createInstance(SolrCore.java:831)
-	at org.apache.solr.core.SolrCore.createUpdateHandler(SolrCore.java:893)
-	at org.apache.solr.core.SolrCore.initUpdateHandler(SolrCore.java:1149)
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1011)
-	... 9 more
-Caused by: org.apache.solr.common.SolrException: _version_ field must exist in schema and be searchable (indexed or docValues) and retrievable(stored or docValues) and not multiValued (_version_ not searchable
-	at org.apache.solr.update.VersionInfo.getAndCheckVersionField(VersionInfo.java:75)
-	at org.apache.solr.update.VersionInfo.<init>(VersionInfo.java:96)
-	at org.apache.solr.update.UpdateLog.init(UpdateLog.java:404)
-	... 20 more
-
-2020-03-19 13:05:25.187 ERROR (qtp1615801298-17) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'tweets' is not available due to init failure: Unable to use updateLog: _version_ field must exist in schema and be searchable (indexed or docValues) and retrievable(stored or docValues) and not multiValued (_version_ not searchable
-	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1781)
-	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:253)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:538)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:419)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.Server.handle(Server.java:505)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:132)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.apache.solr.common.SolrException: Unable to use updateLog: _version_ field must exist in schema and be searchable (indexed or docValues) and retrievable(stored or docValues) and not multiValued (_version_ not searchable
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1072)
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:901)
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1292)
-	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:788)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:210)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	... 1 more
-Caused by: org.apache.solr.common.SolrException: Unable to use updateLog: _version_ field must exist in schema and be searchable (indexed or docValues) and retrievable(stored or docValues) and not multiValued (_version_ not searchable
-	at org.apache.solr.update.UpdateLog.init(UpdateLog.java:408)
-	at org.apache.solr.update.UpdateHandler.<init>(UpdateHandler.java:139)
-	at org.apache.solr.update.UpdateHandler.<init>(UpdateHandler.java:112)
-	at org.apache.solr.update.DirectUpdateHandler2.<init>(DirectUpdateHandler2.java:119)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.apache.solr.core.SolrCore.createInstance(SolrCore.java:831)
-	at org.apache.solr.core.SolrCore.createUpdateHandler(SolrCore.java:893)
-	at org.apache.solr.core.SolrCore.initUpdateHandler(SolrCore.java:1149)
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1011)
-	... 9 more
-Caused by: org.apache.solr.common.SolrException: _version_ field must exist in schema and be searchable (indexed or docValues) and retrievable(stored or docValues) and not multiValued (_version_ not searchable
-	at org.apache.solr.update.VersionInfo.getAndCheckVersionField(VersionInfo.java:75)
-	at org.apache.solr.update.VersionInfo.<init>(VersionInfo.java:96)
-	at org.apache.solr.update.UpdateLog.init(UpdateLog.java:404)
-	... 20 more
-
-2020-03-19 13:05:25.187 ERROR (qtp1615801298-22) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'tweets' is not available due to init failure: Unable to use updateLog: _version_ field must exist in schema and be searchable (indexed or docValues) and retrievable(stored or docValues) and not multiValued (_version_ not searchable
-	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1781)
-	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:253)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:538)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:419)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.Server.handle(Server.java:505)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:132)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.apache.solr.common.SolrException: Unable to use updateLog: _version_ field must exist in schema and be searchable (indexed or docValues) and retrievable(stored or docValues) and not multiValued (_version_ not searchable
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1072)
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:901)
-	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1292)
-	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:788)
-	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:210)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	... 1 more
-Caused by: org.apache.solr.common.SolrException: Unable to use updateLog: _version_ field must exist in schema and be searchable (indexed or docValues) and retrievable(stored or docValues) and not multiValued (_version_ not searchable
-	at org.apache.solr.update.UpdateLog.init(UpdateLog.java:408)
-	at org.apache.solr.update.UpdateHandler.<init>(UpdateHandler.java:139)
-	at org.apache.solr.update.UpdateHandler.<init>(UpdateHandler.java:112)
-	at org.apache.solr.update.DirectUpdateHandler2.<init>(DirectUpdateHandler2.java:119)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.apache.solr.core.SolrCore.createInstance(SolrCore.java:831)
-	at org.apache.solr.core.SolrCore.createUpdateHandler(SolrCore.java:893)
-	at org.apache.solr.core.SolrCore.initUpdateHandler(SolrCore.java:1149)
-	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1011)
-	... 9 more
-Caused by: org.apache.solr.common.SolrException: _version_ field must exist in schema and be searchable (indexed or docValues) and retrievable(stored or docValues) and not multiValued (_version_ not searchable
-	at org.apache.solr.update.VersionInfo.getAndCheckVersionField(VersionInfo.java:75)
-	at org.apache.solr.update.VersionInfo.<init>(VersionInfo.java:96)
-	at org.apache.solr.update.UpdateLog.init(UpdateLog.java:404)
-	... 20 more
-
-2020-03-19 13:05:25.219 INFO  (qtp1615801298-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584623122910} status=0 QTime=38
-2020-03-19 13:06:17.559 INFO  (qtp1615801298-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=23
-2020-03-19 13:06:17.637 INFO  (qtp1615801298-18) [   x:tweets] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=tweets&deleteDataDir=true&action=UNLOAD&wt=json&deleteIndex=true} status=0 QTime=55
-2020-03-19 13:07:04.570 INFO  (qtp1615801298-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=23
-2020-03-19 13:07:04.601 INFO  (qtp1615801298-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=21
-2020-03-19 13:07:04.617 INFO  (qtp1615801298-42) [   x:tweets] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=tweets&action=STATUS&wt=json} status=0 QTime=0
-2020-03-19 13:07:04.711 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.h.a.CoreAdminOperation core create command name=tweets&action=CREATE&instanceDir=tweets&wt=json
-2020-03-19 13:07:04.726 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.c.SolrResourceLoader [tweets] Added 61 libs to classloader, from paths: [/C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/contrib/clustering/lib, /C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/contrib/extraction/lib, /C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/contrib/langid/lib, /C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/contrib/velocity/lib, /C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/dist]
-2020-03-19 13:07:04.758 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.4.1
-2020-03-19 13:07:04.758 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
-2020-03-19 13:07:04.804 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.s.IndexSchema [tweets] Schema name=example
-2020-03-19 13:07:05.023 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
-2020-03-19 13:07:05.023 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
-2020-03-19 13:07:05.023 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
-2020-03-19 13:07:05.023 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
-2020-03-19 13:07:05.039 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.s.IndexSchema Loaded schema example/1.6 with uniqueid field id
-2020-03-19 13:07:05.039 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
-2020-03-19 13:07:05.039 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
-2020-03-19 13:07:05.039 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
-2020-03-19 13:07:05.039 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
-2020-03-19 13:07:05.070 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.c.CoreContainer Creating SolrCore 'tweets' using configuration from instancedir C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets, trusted=true
-2020-03-19 13:07:05.086 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.tweets' (registry 'solr.core.tweets') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@14bee915
-2020-03-19 13:07:05.086 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.c.SolrCore [[tweets] ] Opening new SolrCore at [C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets], dataDir=[C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets\data\]
-2020-03-19 13:07:05.148 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2020-03-19 13:07:09.898 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2020-03-19 13:07:09.898 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2020-03-19 13:07:09.913 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2020-03-19 13:07:09.913 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2020-03-19 13:07:09.913 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.s.SolrIndexSearcher Opening [Searcher@5643a5ec[tweets] main]
-2020-03-19 13:07:09.928 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets\conf
-2020-03-19 13:07:09.928 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _rest_managed.json using file:dir=C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets\conf
-2020-03-19 13:07:09.928 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.r.ManagedResource Loaded initArgs {} for /rest/managed
-2020-03-19 13:07:09.928 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_stopwords_english.json using file:dir=C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets\conf
-2020-03-19 13:07:09.928 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true} for /schema/analysis/stopwords/english
-2020-03-19 13:07:09.928 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.r.s.a.ManagedWordSetResource Loaded 35 words for /schema/analysis/stopwords/english
-2020-03-19 13:07:09.928 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.r.ManagedResource Notified 2 observers of /schema/analysis/stopwords/english
-2020-03-19 13:07:09.928 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_synonyms_english.json using file:dir=C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets\conf
-2020-03-19 13:07:09.928 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true,format=solr} for /schema/analysis/synonyms/english
-2020-03-19 13:07:09.928 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.r.s.a.ManagedSynonymGraphFilterFactory Loaded 3 synonym mappings for /schema/analysis/synonyms/english
-2020-03-19 13:07:09.928 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.r.ManagedResource Notified 2 observers of /schema/analysis/synonyms/english
-2020-03-19 13:07:09.928 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2020-03-19 13:07:09.944 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2020-03-19 13:07:09.944 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
-2020-03-19 13:07:09.944 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
-2020-03-19 13:07:09.959 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
-2020-03-19 13:07:09.959 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets\conf\elevate.xml
-2020-03-19 13:07:09.975 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2020-03-19 13:07:09.975 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1661597887994265600
-2020-03-19 13:07:09.975 INFO  (searcherExecutor-13-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5643a5ec[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2020-03-19 13:07:09.975 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=tweets&action=CREATE&instanceDir=tweets&wt=json} status=0 QTime=5267
-2020-03-19 13:07:10.006 INFO  (searcherExecutor-13-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=37
-2020-03-19 13:07:10.006 INFO  (searcherExecutor-13-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2020-03-19 13:07:10.006 INFO  (searcherExecutor-13-thread-1-processing-x:tweets) [   x:tweets] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2020-03-19 13:07:10.006 INFO  (searcherExecutor-13-thread-1-processing-x:tweets) [   x:tweets] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
-2020-03-19 13:07:10.022 INFO  (searcherExecutor-13-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.SolrCore [tweets] Registered new searcher Searcher@5643a5ec[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2020-03-19 13:11:27.534 INFO  (qtp1615801298-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1584623487378} status=0 QTime=0
-2020-03-19 13:11:27.575 INFO  (qtp1615801298-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584623487379} status=0 QTime=41
-2020-03-19 13:11:27.601 INFO  (qtp1615801298-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584623487379} status=0 QTime=22
-2020-03-19 13:11:29.830 INFO  (qtp1615801298-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1584623487378} status=0 QTime=0
-2020-03-19 13:11:29.834 INFO  (qtp1615801298-26) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1584623489822} status=0 QTime=4
-2020-03-19 13:11:29.836 INFO  (qtp1615801298-25) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/replication params={wt=json&command=details&_=1584623489822} status=0 QTime=4
-2020-03-19 13:11:29.836 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1584623487379&ts=1584623487379} status=503 QTime=1
-2020-03-19 13:11:29.877 INFO  (qtp1615801298-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584623487379} status=0 QTime=56
-2020-03-19 13:11:29.877 INFO  (qtp1615801298-42) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/system params={wt=json&_=1584623489822} status=0 QTime=53
-2020-03-19 13:11:43.994 INFO  (qtp1615801298-44) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={}{} 0 11
-2020-03-19 13:11:43.994 ERROR (qtp1615801298-44) [   x:tweets] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Unknown command 'created_at' at [13]
-	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.processUpdate(JsonLoader.java:175)
-	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.load(JsonLoader.java:121)
-	at org.apache.solr.handler.loader.JsonLoader.load(JsonLoader.java:84)
-	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
-	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:799)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:578)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:419)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.Server.handle(Server.java:505)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-
-2020-03-19 13:11:44.891 INFO  (qtp1615801298-20) [   x:tweets] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1661598176264585216,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-2020-03-19 13:11:44.891 INFO  (qtp1615801298-20) [   x:tweets] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
-2020-03-19 13:11:44.891 INFO  (qtp1615801298-20) [   x:tweets] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2020-03-19 13:11:44.891 INFO  (qtp1615801298-20) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={commit=true}{commit=} 0 4
+Caused by: org.xml.sax.SAXParseException: The element type "field" must be terminated by the matching end-tag "</field>".
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204) ~[?:?]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1685) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2883) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:246) ~[?:?]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339) ~[?:?]
+	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:140) ~[?:?]
+	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:87) ~[?:?]
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:458) ~[?:?]
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:177) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:172) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45) ~[?:?]
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:119) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91) ~[?:?]
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1341) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1288) ~[?:?]
+	... 7 more
+2020-03-20 09:37:14.369 INFO  (qtp1615801298-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=84
+2020-03-20 09:37:15.570 INFO  (qtp1615801298-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1584697035138} status=0 QTime=2
+2020-03-20 09:37:15.634 INFO  (qtp1615801298-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584697035139} status=0 QTime=63
+2020-03-20 09:37:15.696 INFO  (qtp1615801298-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584697035139} status=0 QTime=53
+2020-03-20 09:38:09.324 INFO  (qtp1615801298-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1584697089245} status=0 QTime=0
+2020-03-20 09:38:09.375 INFO  (qtp1615801298-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584697089246} status=0 QTime=46
+2020-03-20 09:38:09.419 INFO  (qtp1615801298-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584697089246} status=0 QTime=39
+2020-03-20 09:38:11.206 INFO  (qtp1615801298-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1584697091101} status=0 QTime=0
+2020-03-20 09:38:11.275 INFO  (qtp1615801298-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584697091102} status=0 QTime=65
+2020-03-20 09:38:11.346 INFO  (qtp1615801298-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584697091102} status=0 QTime=65
+2020-03-20 09:38:59.586 INFO  (qtp1615801298-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1584697139498} status=0 QTime=0
+2020-03-20 09:38:59.643 INFO  (qtp1615801298-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584697139498} status=0 QTime=59
+2020-03-20 09:38:59.691 INFO  (qtp1615801298-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584697139498} status=0 QTime=41
+2020-03-20 09:39:02.206 INFO  (qtp1615801298-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1584697142123} status=0 QTime=0
+2020-03-20 09:39:02.256 INFO  (qtp1615801298-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584697142124} status=0 QTime=50
+2020-03-20 09:39:02.321 INFO  (qtp1615801298-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584697142124} status=0 QTime=59
+2020-03-20 09:39:03.021 INFO  (qtp1615801298-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1584697142950} status=0 QTime=0
+2020-03-20 09:39:03.057 INFO  (qtp1615801298-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584697142951} status=0 QTime=34
+2020-03-20 09:39:03.106 INFO  (qtp1615801298-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584697142951} status=0 QTime=44
+2020-03-20 09:39:03.236 INFO  (qtp1615801298-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1584697143184} status=0 QTime=0
+2020-03-20 09:39:03.272 INFO  (qtp1615801298-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584697143184} status=0 QTime=34
+2020-03-20 09:39:03.315 INFO  (qtp1615801298-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584697143184} status=0 QTime=40
+2020-03-20 09:39:03.499 INFO  (qtp1615801298-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1584697143432} status=0 QTime=0
+2020-03-20 09:39:03.534 INFO  (qtp1615801298-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584697143433} status=0 QTime=34
+2020-03-20 09:39:03.581 INFO  (qtp1615801298-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584697143433} status=0 QTime=42
+2020-03-20 09:39:03.852 INFO  (qtp1615801298-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1584697143791} status=0 QTime=0
+2020-03-20 09:39:03.889 INFO  (qtp1615801298-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584697143792} status=0 QTime=37
+2020-03-20 09:39:03.935 INFO  (qtp1615801298-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584697143792} status=0 QTime=41
+2020-03-20 09:39:04.184 INFO  (qtp1615801298-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1584697144129} status=0 QTime=0
+2020-03-20 09:39:04.216 INFO  (qtp1615801298-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584697144129} status=0 QTime=32
+2020-03-20 09:39:04.259 INFO  (qtp1615801298-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584697144129} status=0 QTime=39
+2020-03-20 09:39:16.309 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@4264b240{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-03-20 09:39:16.310 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2020-03-20 09:39:16.315 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=982634822
+2020-03-20 09:39:16.318 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2020-03-20 09:39:16.320 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1b7332a7: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@79872c47
+2020-03-20 09:39:16.337 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2020-03-20 09:39:16.338 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@61ecbee9: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@7945264f
+2020-03-20 09:39:16.341 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2020-03-20 09:39:16.342 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1bb740f2: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@2b4fdec
+2020-03-20 09:39:16.363 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@6e57e95e{/solr,null,UNAVAILABLE}{C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server/solr-webapp/webapp}

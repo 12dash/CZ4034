@@ -397,18 +397,15 @@
   <fieldType name="tints" class="solr.TrieIntField" positionIncrementGap="0" multiValued="true" precisionStep="8"/>
   <fieldType name="tlong" class="solr.TrieLongField" positionIncrementGap="0" precisionStep="8"/>
   <fieldType name="tlongs" class="solr.TrieLongField" positionIncrementGap="0" multiValued="true" precisionStep="8"/>
+  
   <field name="_version_" type="long" indexed="true" stored="true"/>
+  <field name="date" type="strings"/>
   <field name="id" type="string" multiValued="false" indexed="true" required="true" stored="true"/>
-  <field name="keyword" type="strings"/>
-  <field name="language" type="string" indexed="true" stored="true"/>
+  <field name="keyword" type="strings" indexed="true"/>
   <field name="likes" type="tlongs"/>
-  <field name="location" type="string" indexed="true" stored="true"/>
-  <field name="retweet" type="boolean" indexed="true" stored="true"/>
+  <field name="location" type="strings" indexed="true" stored="true"/>
   <field name="retweets" type="tlongs"/>
-  <field name="source" type="string" indexed="true" stored="true"/>
-  <field name="text" type="string" indexed="true" stored="true"/>
-  <field name="tweet" type="strings"/>
-  <field name="date" type="strings" indexed="true" stored="true"/>
+  <field name="tweet" type="text_general" indexed = "true" stored = "true"/>
   <dynamicField name="*_txt_en_split_tight" type="text_en_splitting_tight" indexed="true" stored="true"/>
   <dynamicField name="*_descendent_path" type="descendent_path" indexed="true" stored="true"/>
   <dynamicField name="*_ancestor_path" type="ancestor_path" indexed="true" stored="true"/>

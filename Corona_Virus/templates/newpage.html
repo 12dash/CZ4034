@@ -1,6 +1,6 @@
 {% load static %}
 <h1>Result</h1> 
 {% for result in data %}
-    {{result.tweet}}
+{{result.date.0}}&emsp;&emsp;{{result.keyword.0}}&emsp;&emsp;{{result.tweet.0}}
     <br />
 {% endfor %}    

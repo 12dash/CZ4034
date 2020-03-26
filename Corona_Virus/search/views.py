@@ -12,7 +12,8 @@ def search(request):
     return render(request, 'search.html')
 
 def search_output(request):
-    query = request.GET['search']    
+    query = request.GET['search']   
+    query = 'tweet:'+ "\""+ query +"\""    
     print(query)
     data = solr_search(query)
     for result in data:
@@ -21,7 +22,6 @@ def search_output(request):
 
 
 def solr_search(a):
-    solr = pysolr.Solr('http://localhost:8983/solr/tweets', timeout=10)
-    a = 'tweet:'+a
+    solr = pysolr.Solr('http://localhost:8983/solr/tweets', timeout=10)    
     results = solr.search(a)
     return results

@@ -22,5 +22,6 @@ def search_output(request):
 
 def solr_search(a):
     solr = pysolr.Solr('http://localhost:8983/solr/tweets', timeout=10)
+    a = 'tweet:'+a
     results = solr.search(a)
     return results

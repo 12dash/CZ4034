@@ -24,6 +24,7 @@
     color: white;
     font-size: 30px;
     }
+    
     </style>
 </head>
 
@@ -57,10 +58,31 @@
           </div>
         </div>
       </nav>
-      <div class = header> 
-    <h1>Results</h1> 
-    <p>The top 10 result for the query</p>
+    <div class = header> 
+        <h1>Results</h1> 
+        <p>The top 10 result for the query</p>
+    </div>
+    <div class="row mb-5">
+      <div class="col-lg-8 mx-auto">
+        <h5 class="font-weight-light mb-4 font-italic text-white">Type the keyword you are looking for in the tweets</h5>
+        <div class="bg-white p-5 rounded shadow">
+  
+          <!-- Custom rounded search bars with input group -->
+          <form action = "{% url 'results' %}" method = 'get' >          
+            <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
+              <div class="input-group">
+                <input id = "search" name = "search" type="text" placeholder="What're you searching for?" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+                <div class="input-group-append">
+                <button id="button-addon1"  type="submit" class="btn btn-link text-primary"><i class="fa fa-search">Search</i></button>               
+                </div>
+              </div>
+            </div>
+          </form>
+          <!-- End -->
+   
+        </div>
       </div>
+  </div>
     <br />
     {% for result in data %}
     {{result.date.0}}&emsp;&emsp;

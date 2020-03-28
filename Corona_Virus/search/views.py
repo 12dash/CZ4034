@@ -22,6 +22,7 @@ def search_output(request):
 
 
 def solr_search(a):
-    solr = pysolr.Solr('http://localhost:8983/solr/tweets', timeout=10)    
-    results = solr.search(a,rows = 20)
+    solr = pysolr.Solr('http://localhost:8983/solr/tweets', timeout=10)     
+    results = solr.search(a,rows = 20, f1 = "*,score")
+    print(results)
     return results

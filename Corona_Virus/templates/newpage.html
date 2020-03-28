@@ -64,7 +64,9 @@
     </div>
     <div class="row mb-5">
       <div class="col-lg-8 mx-auto">
-        <h5 class="font-weight-light mb-4 font-italic text-white">Type the keyword you are looking for in the tweets</h5>
+        <br/>
+        <br/>
+        <br />
         <div class="bg-white p-5 rounded shadow">
   
           <!-- Custom rounded search bars with input group -->
@@ -85,9 +87,15 @@
   </div>
     <br />
     {% for result in data %}
-    {{result.date.0}}&emsp;&emsp;
-    {{result.keyword.0}}&emsp;&emsp;
-    {{result.tweet.0}}
-        <br /><br />
+    <div class="text-center" style="background: #edebeb">
+      <div class="card-body">
+        <b>Date:     </b>{{result.date.0}}&emsp;&emsp;<br />
+        <b>Keyword:  </b>{{result.keyword.0}}&emsp;&emsp;<br />
+        <b>Tweets:   </b>{{result.tweet.0}}&emsp;&emsp;<br />
+      </div>     
+     <br/>     
+    </div>
+    <br/>
+    
     {% endfor %}    
 </body>

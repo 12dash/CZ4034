@@ -60,7 +60,7 @@
       </nav>
     <div class = header> 
         <h1>Results</h1> 
-        <p>The top 10 result for the query</p>
+        <p>The top 20 result for the query</p>
     </div>
     <div class="row mb-5">
       <div class="col-lg-8 mx-auto">
@@ -86,12 +86,19 @@
       </div>
   </div>
     <br />
+    <h3 style = "font-family: Courier New Lucida Console; text-align: center;color: #1abc9c;">Ranking according to most likes</h3><br>
+
     {% for result in data %}
-    <div class="text-center" style="background: #edebeb">
-      <div class="card-body">
+
+    <div class="text-center">
+      <div class="card-header">
+        <b>Tweets   </b>&emsp;&emsp;
+      </div>
+      <div class="card-body" style ="font-family: Courier New Lucida Console;background: #edebeb;" >
         <b>Date:     </b>{{result.date.0}}&emsp;&emsp;<br />
         <b>Keyword:  </b>{{result.keyword.0}}&emsp;&emsp;<br />
-        <b>Tweets:   </b>{{result.tweet.0}}&emsp;&emsp;<br />
+        <b>Tweet:   </b>{{result.tweet.0}}&emsp;&emsp;<br />
+        <b>Likes:   </b>{{result.likes.0}}&emsp;&emsp;<br />
       </div>         
     </div>
     <br/>    

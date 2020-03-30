@@ -20,6 +20,7 @@ def Dsearch_output(request):
     query = "\""+ query +"\""    
     print(query)
     data = get_tweets(query)
+    data = data.sort_values(['retweets'], ascending=False)
     print(data)
     return render(request, 'Dynamic_results.html', {'data': data})
 

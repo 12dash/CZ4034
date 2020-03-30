@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+  
+    <title>Corona Virus</title>
+  
+    <!-- Bootstrap core CSS -->
+    <link href="{% static  'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/heroic-features.css' %}" rel="stylesheet">
+    
+    <style>
+        .header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+    }
+    
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="{% url 'home' %}">Home Page</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="{% url 'home' %}">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.worldometers.info/coronavirus/">Table</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'option' %}" >Search for Tweets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tweets Analysis</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class = header> 
+        <h1>Results</h1> 
+        <p>The top 20 result for the query</p>
+    </div>
+    <div class="row mb-5">
+      <div class="col-lg-8 mx-auto">
+        <br/>
+        <br/>
+        <br />
+        <div class="bg-white p-5 rounded shadow">
+  
+          <!-- Custom rounded search bars with input group -->
+          <form action = "{% url 'dynamic_results' %}" method = 'get' >          
+            <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
+              <div class="input-group">
+                <input id = "search" name = "search" type="text" placeholder="What're you searching for?" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+                <div class="input-group-append">
+                <button id="button-addon1"  type="submit" class="btn btn-link text-primary"><i class="fa fa-search">Search</i></button>               
+                </div>
+              </div>
+            </div>
+          </form>
+          <!-- End -->
+   
+        </div>
+      </div>
+  </div>
+    <br />
+    <h3 style = "font-family: Courier New Lucida Console; text-align: center;color: #1abc9c;">Ranking according to most likes</h3><br>
+
+    {% for i in data.itertuples%}
+
+    <div class="text-center">
+      <div class="card-header">
+        <b>Tweets   </b>&emsp;&emsp;
+      </div>
+      <div class="card-body" style ="font-family: Courier New Lucida Console;background: #edebeb;" >
+        <b>Date:     </b>{{i.date}}&emsp;&emsp;<br />
+        <b>Keyword:  </b>{{i.keyword}}&emsp;&emsp;<br />
+        <b>Tweet:   </b>{{i.tweet}}&emsp;&emsp;<br />
+        <b>Likes:   </b>{{i.likes}}&emsp;&emsp;<br />
+      </div>         
+    </div>
+    <br/>    
+    {% endfor %}    
+</body>

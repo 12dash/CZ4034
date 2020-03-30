@@ -43,6 +43,7 @@ def getTweets(keyword, number):
                  'likes':x._json['favorite_count']}
             collection=collection.append(row, ignore_index=True)
             
+    print(collection)
     return collection
 
 def searchUpdate(query, number):

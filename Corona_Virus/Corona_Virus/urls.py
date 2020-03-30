@@ -19,7 +19,8 @@ from . import views
 
 urlpatterns = [
     path('',views.index,  name = 'home'),
+    path('searchOption',views.search_option, name = 'option'),
     path('admin/', admin.site.urls),  
-    path('dashboard/', include( 'dashboard.urls')),  
+    path('dynamicSearch/', include('dynamicSearch.urls')),  
     path('search/', include ('search.urls')),
 ]

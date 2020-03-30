@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Corona Virus</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static  'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/heroic-features.css' %}" rel="stylesheet">
+
+</head>
+
+<style>
+    .content {       
+              
+        padding-top: 2%;
+        padding-left: 25%;
+    }
+    .header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+    }
+
+</style>
+
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'home' %}">Home Page</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'home' %}">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.worldometers.info/coronavirus/">Table</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'option' %}" >Search for Tweets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tweets Analysis</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class = header> 
+    <h1>Search Options</h1> 
+    <br />
+    <p>Select the search type</p>
+</div>
+
+
+    <div class = 'content'>
+        <div class="row" style="text-align: center;" >
+            
+                        <div class="col-sm-4">
+                            <div class="card" >
+                            <img class="card-img-top"  alt="100%x180" src="https://miro.medium.com/max/12032/0*bJlMQkXW7FOfL5CL" style="height: 300px; width: 100%; display: block;">
+                            
+                                <br/>
+                                <h4 class="card-title">Static</h4>
+                                <p class="card-text">Search the static search results.</p>
+                                <a href="{% url 'search' %}" class="btn btn-primary">Static search</a>
+                            </div>
+                            </div>
+                        
+
+                    
+                        <div class="col-sm-4">
+                            <div class="card" >
+                            <img class="card-img-top" alt="100%x180" src="https://miro.medium.com/max/12032/0*bJlMQkXW7FOfL5CL" style="height: 300px; width: 100%; display: block;">
+                                <br />
+                                <h4 class="card-title">Dynamic</h4>
+                                <p class="card-text">Search the dynamic search results.</p>
+                                <a href="{% url 'dynamic_search' %}" class="btn btn-primary">Dynamic search</a>
+                            </div>                
+                        </div> 
+            </div>
+            </div>
+        </div>
+
+  </html>

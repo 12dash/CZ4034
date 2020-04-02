@@ -18,7 +18,10 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.search, name = 'search'),
+    path ('', views.search_select, name = 'search_select'),
+    path ('custom_search/', views.custom_search, name = 'custom_s'),
+    path('custom_result/',views.custom_search_output, name = 'custom_results'),
+    path('search/', views.search, name = 'search'),
     path('result/',views.search_output, name = 'results')
    
 ]

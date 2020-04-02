@@ -17,7 +17,8 @@ solr = pysolr.Solr('http://localhost:8983/solr/tweets', timeout=10)
 
 # Later, searching is easy. In the simple case, just a plain Lucene-style
 # query is fine.
-results = solr.search('tweet:corona')
+fq = 'location:"United States"'
+results = solr.search('tweet:corona', fq = fq)
 
 # The ``Results`` object stores total results found, by default the top
 # ten most relevant results and any additional data like

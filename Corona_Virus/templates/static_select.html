@@ -67,7 +67,7 @@
     </div>
   </nav>
   <div class = header> 
-    <h1>Search Options</h1> 
+    <h1>Static Database Search Options</h1> 
     <br />
     <p>Select the search type</p>
 </div>
@@ -78,12 +78,12 @@
             
                         <div class="col-sm-4">
                             <div class="card" >
-                            <img class="card-img-top"  alt="100%x180" src="https://miro.medium.com/max/12032/0*bJlMQkXW7FOfL5CL" style="height: 300px; width: 100%; display: block;">
+                            <img class="card-img-top"  alt="100%x180" src="https://miro.medium.com/max/12032/0*bJlMQkXW7FOfL5CL" style="height: 320px; width: 100%; display: block;">
                             
                                 <br/>
-                                <h4 class="card-title">Static</h4>
-                                <p class="card-text">Search the static search results.</p>
-                                <a href="{% url 'search_select' %}" class="btn btn-primary">Static search</a>
+                                <h4 class="card-title">I just want to search the tweet</h4>
+                                <p class="card-text">Search for tweets from all over the world</p>
+                                <a href="{% url 'search' %}" class="btn btn-primary">Tweets Search</a>
                             </div>
                             </div>
                         
@@ -91,11 +91,11 @@
                     
                         <div class="col-sm-4">
                             <div class="card" >
-                            <img class="card-img-top" alt="100%x180" src="https://miro.medium.com/max/12032/0*bJlMQkXW7FOfL5CL" style="height: 300px; width: 100%; display: block;">
+                            <img class="card-img-top" alt="100%x180" src="https://miro.medium.com/max/12032/0*bJlMQkXW7FOfL5CL" style=" width: 100%; display: block;">
                                 <br />
-                                <h4 class="card-title">Dynamic</h4>
-                                <p class="card-text">Search the dynamic search results.</p>
-                                <a href="{% url 'dynamic_search' %}" class="btn btn-primary">Dynamic search</a>
+                                <h4 class="card-title">Want to go wild with more than just one parameter </h4>
+                                <p class="card-text">You can enter location.</p>
+                                <a href="{% url 'custom_s' %}" class="btn btn-primary">Custom Search</a>
                             </div>                
                         </div> 
             </div>

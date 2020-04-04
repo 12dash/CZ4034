@@ -23,4 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),  
     path('dynamicSearch/', include('dynamicSearch.urls')),  
     path('search/', include ('search.urls')),
+    path('sentiment/',include('Tweet_sentiment.urls')),
 ]

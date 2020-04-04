@@ -87,7 +87,7 @@
       </div>
     </div>
   </nav>
-  <h1 style = "text-align: center;padding: 10px; font-family: Georgia, 'Times New Roman', Times, serif; font-style: oblique;">Displaying the Top 20 Positive and Negative tweets on {{a}}</h1>
+  <h1 style = "text-align: center;padding: 20px; font-family: 'Segoe UI', Times, serif ;">Displaying the Top 20 Positive and Negative tweets on {{a}}</h1>
   <div class = contain>
   <div class = 'row'>
       <div class = 'col' style = "width: 10%;overflow-y: scroll;max-height: 750px;">
@@ -101,8 +101,9 @@
                   <b>Tweets   </b>&emsp;&emsp;
                 </div>
                 <div class="card-body" style ="font-family: Courier New Lucida Console;background: #edebeb;" >
-                <b>Tweets:     </b>{{i.Tweet.0}}&emsp;&emsp;<br />
-                <b>Sentiment:  </b>{{i.Sentiment}}&emsp;&emsp;<br />     
+                <b>Tweets:     </b>{{i.Tweet}}&emsp;&emsp;<br />
+                <b>Polarity:  </b>{{i.Polarity}}&emsp;&emsp;<br />  
+                <b>Subjectivity:  </b>{{i.Subjectivity}}&emsp;&emsp;<br /> 
             </div>         
         </div>
         <br/>    
@@ -118,8 +119,9 @@
         <b>Tweets   </b>&emsp;&emsp;
       </div>
       <div class="card-body" style ="font-family: Courier New Lucida Console;background: #edebeb;" >
-        <b>Tweets:     </b>{{i.Tweet.0}}&emsp;&emsp;<br />
-        <b>Sentiment:  </b>{{i.Sentiment}}&emsp;&emsp;<br />     
+        <b>Tweets:     </b>{{i.Tweet}}&emsp;&emsp;<br />
+        <b>Polarity:  </b>{{i.Polarity}}&emsp;&emsp;<br />   
+        <b>Subjectivity:  </b>{{i.Subjectivity}}&emsp;&emsp;<br />   
       </div>         
     </div>
     <br/>    

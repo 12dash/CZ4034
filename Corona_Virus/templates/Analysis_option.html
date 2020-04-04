@@ -1,0 +1,186 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<style>
+		body{
+    background: #eee;
+}
+span{
+    font-size:15px;
+}
+
+.box{
+    padding:60px 0px;
+}
+
+.box-part{
+    background:#FFF;
+    border-radius:0;
+    padding:60px 10px;
+    margin:30px 0px;
+}
+.text{
+    margin:20px 0px;
+}
+
+.fa{
+     color:#4183D7;
+}
+</style>
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'home' %}">Home Page</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'home' %}">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://google.com/covid19-map/?hl=en">Table</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'option' %}" >Search for Tweets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tweets Analysis</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<div class="box">
+    <div class="container">
+     	<div class="row">
+			 
+			    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               
+					<div class="box-part text-center">
+                        
+						<div class="title">
+							<h4>Corona Virus</h4>
+						</div>
+                        
+						<div class="text">
+							<span>Tweets crawled by keyword Corona Virus</span>
+						</div>
+                        
+						<a href="{% url 'corona' %}">Learn More</a>
+                        
+					 </div>
+				</div>	 
+				
+				 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               
+					<div class="box-part text-center">
+                    
+						<div class="title">
+							<h4>Epidemic</h4>
+						</div>
+                        
+						<div class="text">
+							<span>Tweets crawled by related word epidemic</span>
+						</div>
+                        
+						<a href="{% url 'epidemic' %}">Learn More</a>
+                        
+					 </div>
+				</div>	 
+				
+				 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               
+					<div class="box-part text-center">
+                        
+						<div class="title">
+							<h4>Quarantine</h4>
+						</div>
+                        
+						<div class="text">
+							<span>Tweets crawled by related word Quarantine</span>
+						</div>
+                        
+						<a href="{% url 'quarantine' %}">Learn More</a>
+                        
+					 </div>
+				</div>	 
+				
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               
+					<div class="box-part text-center">                        
+                        
+                        
+						<div class="title">
+							<h4>Safe</h4>
+						</div>
+                        
+						<div class="text">
+							<span>Tweets crawled by related word safe</span>
+						</div>
+                        
+						<a href="{% url 'safe' %}">Learn More</a>
+                        
+					 </div>
+				</div>	 
+				
+				 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               
+					<div class="box-part text-center">
+                    
+						<div class="title">
+							<h4>Contagious</h4>
+						</div>
+                        
+						<div class="text">
+							<span>Tweets crawled by related word Contagious</span>
+						</div>
+                        
+						<a href="{% url 'contagious' %}">Learn More</a>
+                        
+					 </div>
+				</div>	 
+				
+				 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               
+					<div class="box-part text-center">
+                        
+                       
+						<div class="title">
+							<h4>China</h4>
+						</div>
+                        
+						<div class="text">
+							<span>Tweets crawled by related word China</span>
+						</div>
+                        
+						<a href="{% url 'china' %}">Learn More</a>
+                        
+					 </div>
+				</div>
+		
+		</div>		
+    </div>
+</div>

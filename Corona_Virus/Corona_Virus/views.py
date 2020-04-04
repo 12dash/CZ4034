@@ -5,3 +5,6 @@ def index(request):
 
 def search_option(request):
     return render(request,'searchOption.html')
+
+def option_sentiment(request):
+    return render(request, 'Sentiment_option.html')

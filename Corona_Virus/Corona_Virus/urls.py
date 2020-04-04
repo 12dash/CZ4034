@@ -19,9 +19,13 @@ from . import views
 
 urlpatterns = [
     path('',views.index,  name = 'home'),
-    path('searchOption',views.search_option, name = 'option'),
+    path('searchOption/',views.search_option, name = 'option'),
     path('admin/', admin.site.urls),  
     path('dynamicSearch/', include('dynamicSearch.urls')),  
     path('search/', include ('search.urls')),
     path('sentiment/',include('Tweet_sentiment.urls')),
+    path('sentiment/',views.option_sentiment, name = 's_option'),
+    path('tweet_sentiment/',include('tweetSent.urls')),
+    path('country_sentiment/',include('CountrySentiments.urls')),
+    path('dyanmic_sentiment/',include('DynamicSentiments.urls')),
 ]

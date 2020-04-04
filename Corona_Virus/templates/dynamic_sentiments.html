@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Corona Virus</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static  'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/heroic-features.css' %}" rel="stylesheet">
+  <style>
+    .contain{
+      padding-left:10px ;
+      padding-right: 20px;
+    }
+    .header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+    }
+    #left {
+  text-align: center;
+  height:100%;
+}
+#right {
+  text-align: center;
+  height:100%;
+}
+@media (min-width: 768px){
+  #left {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    overflow-y: scroll; 
+  }
+  #right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow-y: scroll;
+    width: 50%;
+  }
+}
+
+</style>
+</head>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'home' %}">Home Page</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'home' %}">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://google.com/covid19-map/?hl=en">Table</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'option' %}" >Search for Tweets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 's_option' %}">Tweets Analysis</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <h1 style = "text-align: center;padding: 20px; font-family: 'Segoe UI', Times, serif ;">Displaying the Top 10 Positive and Negative tweets on {{a}}</h1>
+  <div class = contain>
+  <div class = 'row'>
+      <div class = 'col' style = "width: 10%;overflow-y: scroll;max-height: 750px;">
+        <div class = header>  
+         
+          <h1>Negative tweets</h1>
+        </div>
+            {% for i in data_top.itertuples%}
+            <div class="text-center">
+                <div class="card-header">
+                  <b>Tweets   </b>&emsp;&emsp;
+                </div>
+                <div class="card-body" style ="font-family: Courier New Lucida Console;background: #edebeb;" >
+                <b>Tweets:     </b>{{i.Tweet}}&emsp;&emsp;<br />
+                <b>Polarity:  </b>{{i.Polarity}}&emsp;&emsp;<br />  
+                <b>Subjectivity:  </b>{{i.Subjectivity}}&emsp;&emsp;<br /> 
+            </div>         
+        </div>
+        <br/>    
+      {% endfor %} 
+  </div>
+  <div class = 'col' style = "width: 10%;overflow-y: scroll; max-height: 750px;">    
+    <div class = header>  
+               <h1>Positive tweets</h1>
+    </div>
+    {% for i in data_bottom.itertuples%}
+    <div class="text-center">
+      <div class="card-header">
+        <b>Tweets   </b>&emsp;&emsp;
+      </div>
+      <div class="card-body" style ="font-family: Courier New Lucida Console;background: #edebeb;" >
+        <b>Tweets:     </b>{{i.Tweet}}&emsp;&emsp;<br />
+        <b>Polarity:  </b>{{i.Polarity}}&emsp;&emsp;<br />   
+        <b>Subjectivity:  </b>{{i.Subjectivity}}&emsp;&emsp;<br />   
+      </div>         
+    </div>
+    <br/>    
+    {% endfor %} 
+</div>
+  </div>
+</div>
+</html>

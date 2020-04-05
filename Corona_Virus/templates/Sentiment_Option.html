@@ -102,30 +102,40 @@
                 <a href="{% url 'tweets_us' %}" style="text-align: center;" class="btn btn-primary">Location</a>
 
             </div>
-        </div>
-        <div class="col-sm-4" style="padding: 2%;margin-left: auto;margin-right: auto;">
-            <div class="card" style="width: 20rem; margin: auto;">
+        </div>`
+    </div>
+    <div class="row">
+        <div class="col-sm-3" style="padding: 2%;margin-left: auto;margin-right: auto;">
+            <div class="card" style="width: 20rem; margin: auto">
                 <img src="https://news.yale.edu/sites/default/files/styles/featured_media/public/adobestock_267933380.jpeg?itok=ZJ3iyo3Q&c=07307e7d6a991172b9f808eb83b18804"
                     class="card-img-top" alt="100%x180" style="height: 200px; width: 100%; display: block;">
                 <br />
-                <p class="card-text" style="text-align: center;">Check Out The Dashboard.</p>
-
-                <a href="{% url 'dynamic_sent' %}" style="text-align: center; " class="btn btn-primary">Keywords</a>
+                <p class="card-text" style="text-align: center;">Check Out sentiment analysis of the Static Result.</p>
+                <a href="{% url 'static_sent' %}" style="text-align: center; " class="btn btn-primary">Search for Tweets</a>
             </div>
         </div>
-        <div class="col-sm-4" style="padding: 2%;margin-left: auto;margin-right: auto;">
-        <div class="card" style="width: 20rem; margin: auto;">
-            <img src="https://www.klipfolio.com/sites/all/themes/klipfolio_theme/img/kvo-dashboards/google-analytics-website-overview-dashboard.png"
-                class="card-img-top" alt="100%x180" style="height: 200px; width: 100%; display: block;">
-            <br />
-            <p class="card-text" style="text-align: center;">Check Out The Dashboard.</p>
-    
-            <a href="{% url 'sentiment_p_n' %}" style="text-align: center; " class="btn btn-primary">Dashboard</a>
+        <div class="col-sm-3" style="padding: 2%;margin-left: auto;margin-right: auto;">
+            <div class="card" style="width: 20rem; margin: auto">
+                <img src="https://news.yale.edu/sites/default/files/styles/featured_media/public/adobestock_267933380.jpeg?itok=ZJ3iyo3Q&c=07307e7d6a991172b9f808eb83b18804"
+                    class="card-img-top" alt="100%x180" style="height: 200px; width: 100%; display: block;">
+                <br />
+                <p class="card-text" style="text-align: center;">Check Out sentiment analysis of the Dynamic Result.</p>
+                <a href="{% url 'dynamic_sent' %}" style="text-align: center; " class="btn btn-primary">Search for tweets</a>
+            </div>
         </div>
+        <div class="col-sm-3" style="padding: 2%;margin-left: auto;margin-right: auto;">
+            <div class="card" style="width: 20rem; margin: auto">
+                <img src="https://www.klipfolio.com/sites/all/themes/klipfolio_theme/img/kvo-dashboards/google-analytics-website-overview-dashboard.png"
+                    class="card-img-top" alt="100%x180" style="height: 200px; width: 100%; display: block;">
+                <br />
+                <p class="card-text" style="text-align: center;">Check Out The Dashboard.</p><br/>
+
+                <a href="{% url 'sentiment_p_n' %}" style="text-align: center; " class="btn btn-primary">Dashboard</a>
+            </div>
         </div>
     </div>
 
-   
+
 
 
 </div>

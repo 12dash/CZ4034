@@ -20,86 +20,95 @@
 </head>
 
 <style>
-    .content {       
-              
-        padding-top: 2%;
-        padding-left: 25%;
-    }
-    .header {
+  .content {
+    padding-top: 2%;
+    padding-left: 25%;
+    padding-right: 1%;
+  }
+
+  .header {
     padding: 60px;
     text-align: center;
     background: #1abc9c;
     color: white;
     font-size: 30px;
-    }
-
+  }
 </style>
 
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="{% url 'home' %}">Home Page</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="{% url 'home' %}">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://google.com/covid19-map/?hl=en">Table</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'option' %}" >Search for Tweets</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 's_option' %}">Tweets Analysis</a>
-          </li>
-        </ul>
-      </div>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="{% url 'home' %}">Home Page</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'home' %}">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://google.com/covid19-map/?hl=en">Table</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'option' %}">Search for Tweets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 's_option' %}">Tweets Analysis</a>
+        </li>
+      </ul>
     </div>
-  </nav>
-  <div class = header> 
-    <h1>Static Database Search Options</h1> 
-    <br />
-    <p>Select the search type</p>
+  </div>
+</nav>
+<div class=header>
+  <h1>Static Database Search Options</h1>
+  <br />
+  <p>Select the search type</p>
 </div>
 
 
-    <div class = 'content'>
-        <div class="row" style="text-align: center;" >
-            
-                        <div class="col-sm-4">
-                            <div class="card" >
-                            <img class="card-img-top"  alt="100%x180" src="https://miro.medium.com/max/12032/0*bJlMQkXW7FOfL5CL" style="height: 320px; width: 100%; display: block;">
-                            
-                                <br/>
-                                <h4 class="card-title">I just want to search the tweet</h4>
-                                <p class="card-text">Search for tweets from all over the world</p>
-                                <a href="{% url 'search' %}" class="btn btn-primary">Tweets Search</a>
-                            </div>
-                            </div>
-                        
+<div class='content'>
+  <div class="row" style="text-align: center;">
 
-                    
-                        <div class="col-sm-4">
-                            <div class="card" >
-                            <img class="card-img-top" alt="100%x180" src="https://miro.medium.com/max/12032/0*bJlMQkXW7FOfL5CL" style=" width: 100%; display: block;">
-                                <br />
-                                <h4 class="card-title">Want to go wild with more than just one parameter </h4>
-                                <p class="card-text">You can enter location.</p>
-                                <a href="{% url 'custom_s' %}" class="btn btn-primary">Custom Search</a>
-                            </div>                
-                        </div> 
-            </div>
-            </div>
-        </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <img class="card-img-top" alt="100%x180" src="https://miro.medium.com/max/12032/0*bJlMQkXW7FOfL5CL"
+          style="height: 320px; width: 100%; display: block;">
 
-  </html>
+        <br />
+        <h4 class="card-title">I just want to search the tweet</h4>
+        <p class="card-text">Search for tweets from all over the world</p>
+        <a href="{% url 'search' %}" class="btn btn-primary">Tweets Search</a>
+      </div>
+    </div>
+
+
+
+    <div class="col-sm-4">
+      <div class="card">
+        <img class="card-img-top" alt="100%x180" src="https://miro.medium.com/max/12032/0*bJlMQkXW7FOfL5CL"
+          style=" width: 100%; display: block;">
+        <br />
+        <h4 class="card-title">Want to go wild with more than just one parameter </h4>
+        <p class="card-text">You can enter location.</p>
+        <a href="{% url 'custom_s' %}" class="btn btn-primary">Custom Search</a>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Made by Soham, Ahkshara, Mohit</p>
+  </div>
+  <!-- /.container -->
+</footer>
+
+</html>

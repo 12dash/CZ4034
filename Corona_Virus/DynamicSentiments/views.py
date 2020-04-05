@@ -46,27 +46,26 @@ def get_tweets(a):
         columns=['keyword', 'id', 'tweet', 'date', 'location', 'retweets', 'likes'])
 
     keyword = a
-    number = 200
+    number = 50
 
     try:
         tweets = tw.Cursor(api.search,
                            q=keyword,
-                           lang="en").items(number)
+                           lang="en",tweet_mode='extended').items(number)
     except:
         return collection
 
     for x in tweets:
         if(x.is_quote_status == False and x.retweeted == False):
-            print(x.created_at)
             row = {'keyword': keyword,
                    'id': x._json['id'],
                    'tweet': x._json['text'],
                    'date': x._json['created_at'],
-                   'location': x._json['place'],
+                   'location': x._json['place'], 
                    'retweets': x._json['retweet_count'],
                    'likes': x._json['favorite_count']}
             collection = collection.append(row, ignore_index=True)
-
+        print(x._json['text'])
     return collection
 
 def classifying_positive_negative_1(results):
@@ -77,7 +76,7 @@ def classifying_positive_negative_1(results):
 
     for index,i in results.iterrows():
         words_without_links = [word for word in i['tweet'].split() if (('https' not in word) and (
-            '@' not in word) and ('http' not in word) and ((word == 'not') or (word not in stopwords_set)))]
+            '@' not in word) and ('http' not in word) and ((word in 'not') or (word not in stopwords_set)))]
         temp = ' '.join(words_without_links)
         temp = temp.strip()
         if(len(temp) > 100):

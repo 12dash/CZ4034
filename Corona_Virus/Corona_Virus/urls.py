@@ -28,4 +28,5 @@ urlpatterns = [
     path('tweet_sentiment/',include('tweetSent.urls')),
     path('country_sentiment/',include('CountrySentiments.urls')),
     path('dyanmic_sentiment/',include('DynamicSentiments.urls')),
+    path('static_sentiment/',include('Static_sentiments.urls')),
 ]

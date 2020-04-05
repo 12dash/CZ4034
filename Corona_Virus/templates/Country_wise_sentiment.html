@@ -101,16 +101,19 @@
         <div class="bg-light border-right" id="sidebar-wrapper">
             <div class="sidebar-heading">Countries </div>
             <div class="list-group list-group-flush">
-                <a href="{% url 'tweets_us' %}" class="list-group-item list-group-item-action bg-light">United States</a>
+                <a href="{% url 'tweets_us' %}" class="list-group-item list-group-item-action bg-light">United
+                    States</a>
                 <a href="{% url 'tweets_ind' %}" class="list-group-item list-group-item-action bg-light">India</a>
-                <a href="{% url 'tweets_uk' %}" class="list-group-item list-group-item-action bg-light">United Kingdom</a>
+                <a href="{% url 'tweets_uk' %}" class="list-group-item list-group-item-action bg-light">United
+                    Kingdom</a>
                 <a href="{% url 'tweets_can' %}" class="list-group-item list-group-item-action bg-light">Canada</a>
 
             </div>
         </div>
 
         <div class=contain>
-            <h3 style="text-align: center;padding: 20px; font-family: 'Segoe UI', Times, serif ;">Displaying the Top {{len}}
+            <h3 style="text-align: center;padding: 20px; font-family: 'Segoe UI', Times, serif ;">Displaying the Top
+                {{len}}
                 Positive and Negative tweets of the country {{a}}</h3>
             <div class='row'>
                 <div class='col' style="width: 10%;overflow-y: scroll;max-height: 750px;">
@@ -154,5 +157,11 @@
         </div>
     </div>
 </body>
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Made by Soham, Ahkshara, Mohit</p>
+    </div>
+    <!-- /.container -->
+</footer>
 
 </html>

@@ -1,14 +1,14 @@
-2020-04-06 08:29:41.719 INFO  (main) [   ] o.e.j.u.log Logging initialized @1276ms to org.eclipse.jetty.util.log.Slf4jLog
-2020-04-06 08:29:41.890 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
-2020-04-06 08:29:41.890 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.server.ServerConnector.setSoLingerTime(int) in file:///C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/server/etc/jetty-http.xml
-2020-04-06 08:29:41.897 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 11.0.4+10-LTS
-2020-04-06 08:29:41.918 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/server/contexts/] at interval 0
-2020-04-06 08:29:42.478 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2020-04-06 08:29:42.489 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2020-04-06 08:29:42.489 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2020-04-06 08:29:42.492 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
-2020-04-06 08:29:42.560 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2020-04-06 08:29:42.564 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.4.1
-2020-04-06 08:29:42.564 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2020-04-06 08:29:42.564 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr
-2020-04-06 08:29:42.565 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-04-06T08:29:42.564949300Z
+2020-04-06 13:07:46.262 INFO  (main) [   ] o.e.j.u.log Logging initialized @3858ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-04-06 13:07:46.777 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2020-04-06 13:07:46.777 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.server.ServerConnector.setSoLingerTime(int) in file:///C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/server/etc/jetty-http.xml
+2020-04-06 13:07:46.791 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 11.0.4+10-LTS
+2020-04-06 13:07:46.845 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/server/contexts/] at interval 0
+2020-04-06 13:07:48.762 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-04-06 13:07:48.794 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-04-06 13:07:48.794 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-04-06 13:07:48.802 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2020-04-06 13:07:48.965 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-04-06 13:07:48.971 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.4.1
+2020-04-06 13:07:48.971 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2020-04-06 13:07:48.971 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr
+2020-04-06 13:07:48.975 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-04-06T13:07:48.975863Z

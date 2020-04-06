@@ -11,13 +11,14 @@
 
   <title>Corona Virus</title>
   <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <!-- Bootstrap core CSS -->
   <link href="{% static  'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
@@ -26,13 +27,23 @@
 
 </head>
 
+<style>
+  section {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+</style>
+
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="margin-bottom: 0;">
     <div class="container">
       <a class="navbar-brand" href="{% url 'home' %}">Home Page</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -49,7 +60,7 @@
             <a class="nav-link" href="https://google.com/covid19-map/?hl=en">Table</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'option' %}" >Search for Tweets</a>
+            <a class="nav-link" href="{% url 'option' %}">Search for Tweets</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 's_option' %}">Tweets Analysis</a>
@@ -60,71 +71,129 @@
   </nav>
 
   <!-- Page Content -->
-  <div class="container">
 
-    <!-- Jumbotron Header -->
-    <header class="jumbotron my-4">      
-      <h1 class="display-3">A Warm Welcome!</h1>
-      <p class="lead">This site is used to do cool projects about Corona Virus and analyse Twitter tweets</p>
-      <a href="#" class="btn btn-primary btn-lg">Explore more description</a>
-    </header>
-
+  <!-- Jumbotron Header -->
+  <header class="jumbotron my-4" style="text-align: center; margin-top: 0;">
+    <h1 class="display-3">A Warm Welcome!</h1>
+    <p class="lead">Find out about Twitter Corona Virus tweets and their analysis</p>
+    <a href="#" class="btn btn-primary btn-lg">Explore more description</a>
+  </header>
+  <div class="container" style="text-align: center">
     <!-- Page Features -->
-    <div class="row text-center">
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="https://api.hub.jhu.edu/factory/sites/default/files/styles/hub_xlarge/public/coronavirus_map012320.jpg?itok=fY6WuYG_" alt="100%x180"  style="height: 200px; width: 100%; display: block;">
-          <div class="card-body">
-            <h4 class="card-title">Get the table</h4>
-            <p class="card-text">Find out about the current scenario in the different couontries </p>
-          </div>
-          <div class="card-footer">
-            <a href="https://google.com/covid19-map/?hl=en" class="btn btn-primary">Find Out More!</a>
+    <section>
+      <div class="row">
+        <div class="col">
+          <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/World_Population.svg"
+            alt="100%x180" style="height : 100%; border-radius: 50%">
+        </div>
+        <div class="col">
+          <div class="card h-300" style="height: 100%">
+            <div class="card-header" style="padding: 2%;">
+              <h3 class="card-title">Get the map</h3>
+            </div>
+            <div class="card-body">
+              <div class="card-body align-items-center d-flex justify-content-center">
+                <p style="font-size: large;">
+                  Find out about the current scenario in the different countries displayed on a map.
+                </p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="https://google.com/covid19-map/?hl=en" class="btn btn-primary">Find Out More!</a>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+    <hr>
 
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="https://www.impactbnd.com/hubfs/blog-image-uploads/best-about-us-pages.jpg" alt="100%x180"  style="height: 200px; width: 100%; display: block;">
-          <div class="card-body">
-            <h4 class="card-title">About us</h4>
-            <p class="card-text">Get to know us better so that you could give us an A+</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
+    <section>
+      <div class="row">
+        <div class="col">
+          <br />
+          <br />
+          <br />
+          <img src="https://media.sproutsocial.com/uploads/2018/04/Twitter-Analytics-Tools.png"
+            style="max-width: 100%; border-radius: 40%;" ;>
+        </div>
+        <div class="col">
+          <div class="card h-300" style="height: 100%">
+            <div class="card-header" style="padding: 2%;">
+              <h3 class="card-title">Sentimental Tweet Analysis</h3>
+            </div>
+            <div class="card-body" style="padding-top:5%;padding-bottom: 0; font-size: large">
+              Get the sentiment based on the following options :
+            </div>
+            <div class="card-body" style="padding-top:0%">
+              <div class="col">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="{% url 'sentiment_p_n' %}">Keyword</a></li>
+                  <li class="list-group-item"><a href="{% url 'tweet_p_n' %}">Tweets general </a></li>
+                  <li class="list-group-item"><a href="{% url 'tweets_us' %}" style="text-align: center;">Location</a>
+                  </li>
+                  <li class="list-group-item"><a href="{% url 'static_sent' %}" style="text-align: center; ">Static
+                      Search</a></li>
+                  <li class="list-group-item"><a href="{% url 'dynamic_sent' %}" style="text-align: center; ">Dynamic
+                      Search</a></li>
+                  <li class="list-group-item"> <a href="{% url 'sentiment_p_n' %}"
+                      style="text-align: center;">Dashboard</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="{% url 's_option'  %}" class="btn btn-primary">Get Detail explanation on the options</a>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+    <hr>
 
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="https://media.sproutsocial.com/uploads/2018/04/Twitter-Analytics-Tools.png" alt="100%x180"  style="height: 200px; width: 100%; display: block;">
-          <div class="card-body">
-            <h4 class="card-title">Tweet Analysis</h4>
-            <p class="card-text">Twitter tweets to analyse</p>
-          </div>
-          <div class="card-footer">
-            <a href="{% url 's_option' %}" class="btn btn-primary">Find Out More!</a>
+    <section>
+      <div class="row">
+        <div class="col" style="width : 10%">
+          <img src="https://media.sproutsocial.com/uploads/2015/11/search-twitter-history.svg"
+            style="max-width: 100%; border-radius: 40%;" ;>
+        </div>
+        <div class="col">
+          <div class="card h-300" style="height: 100%">
+            <div class="card-header" style="padding: 2%;">
+              <h3 class="card-title">Search for Tweets</h3>
+            </div>
+            <div class="card-body" style="padding-top:5%;padding-bottom: 0; font-size: large" >
+              Search through static database or get the real time results
+            </div>
+            <br/>
+            <div class="card-body" style="padding-top:0%">
+              <div class="row">
+                <div class="col">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="{% url 'search' %}">Just the text in the tweet</a></li>
+                    <li class="list-group-item"><a href="{% url 'custom_s' %}">Filter the tweets based on location </a>
+                    </li>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <br />
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="{% url 'dynamic_search' %}"
+                        style="text-align: center; ">Dynamic
+                        Search</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+            <div class="card-footer">
+              <a href="{% url 'option' %}"" class=" btn btn-primary">Get the options</a>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="https://media.sproutsocial.com/uploads/2015/11/search-twitter-history.svg" alt="100%x180" style="height: 200px; width: 100%; display: block;">
-          <div class="card-body">
-            <h4 class="card-title">Search for tweets</h4>
-            <p class="card-text"></p>
-          </div>
-          <div class="card-footer">
-            <a href="{% url 'option' %}" class="btn btn-primary">Find Out More!</a>
-          </div>
-        </div>
-      </div>
 
-    </div>
     <!-- /.row -->
 
   </div>
@@ -132,7 +201,7 @@
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
-    <div class="container">      
+    <div class="container">
       <p class="m-0 text-center text-white">Made by Soham, Ahkshara, Mohit</p>
     </div>
     <!-- /.container -->

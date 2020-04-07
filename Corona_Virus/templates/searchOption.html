@@ -4,108 +4,165 @@
 
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <title>Corona Virus</title>
+    <title>Corona Virus</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="{% static  'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="{% static  'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <link href="{% static 'css/heroic-features.css' %}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/heroic-features.css' %}" rel="stylesheet">
 
 </head>
-
 <style>
-    .content {       
-              
+    .content {
+
         padding-top: 2%;
         padding-left: 25%;
     }
-    .header {
-    padding: 60px;
-    text-align: center;
-    background: #1abc9c;
-    color: white;
-    font-size: 30px;
-    }
 
+    .header {
+        padding: 50px;
+        text-align: center;
+        background: #1abc9c;
+        color: white;
+        font-size: 30px;
+    }
 </style>
 
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="{% url 'home' %}">Home Page</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="{% url 'home' %}">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://google.com/covid19-map/?hl=en">Table</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'option' %}" >Search for Tweets</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 's_option' %}">Tweets Analysis</a>
-          </li>
-        </ul>
-      </div>
+        <a class="navbar-brand" href="{% url 'home' %}">Home Page</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'home' %}">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://google.com/covid19-map/?hl=en">Table</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'option' %}">Search for Tweets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 's_option' %}">Tweets Analysis</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </nav>
-  <div class = header> 
-    <h1>Search Options</h1> 
-    <br />
-    <p>Select the search type</p>
-</div>
+</nav>
 
+<body>
+    <div class=header>
+        <h1>Search Options</h1>        
+        <p style ="font-weight: 100;">Select the search type</p>
+    </div>
+    <div style="padding-left: 15%; padding-right: 15%;">
 
-    <div class = 'content'>
-        <div class="row" style="text-align: center;" >
-            
-                        <div class="col-sm-4">
-                            <div class="card" >
-                            <img class="card-img-top"  alt="100%x180" src="https://miro.medium.com/max/12032/0*bJlMQkXW7FOfL5CL" style="height: 300px; width: 100%; display: block;">
-                            
-                                <br/>
-                                <h4 class="card-title">Static</h4>
-                                <p class="card-text">Search the static search results.</p>
-                                <a href="{% url 'search_select' %}" class="btn btn-primary">Static search</a>
+        <div class="row" style="margin: 0;">
+            <div class="col" style="padding:3%">
+                <div class="row" style="text-align: center;">
+                    <div class="col" style="padding: left 2% ; min-height: 500px;">
+                        <div class="card h-300" style="height: 100%">
+                            <div class="card-header" style="padding: 3%;">
+                                <h3 class="card-title" style="padding:2%">Static search</h3>
                             </div>
+                            <br />
+                            <div class="card-body"
+                                style="padding-top:5%;padding-bottom: 0; font-size: x-large;font-weight: 100;">                                
+                                Search through static database or get the real time results
                             </div>
-                        
+                            <div class="card-body" style="padding-top:0%">
+                                
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><a href="{% url 'search' %}">Just the text in
+                                                    the tweet</a></li>
+                                            <li class="list-group-item"><a href="{% url 'custom_s' %}">Filter the tweets
+                                                    based on location </a>
+                                            </li>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="{% url 'search_select' %}" class="btn btn-primary">Get more details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" style="padding:0%">
+                        <div class="card h-300" style="height: 100%">
+                            <div class="card-header" style="padding: 3%;">
+                                <h3 class="card-title" style="padding: 2%">Dynamic Search</h3>
+                            </div>
+                            <div class="card-body">
+                                <img class="card-img-top" alt="100%x180" src="https://miro.medium.com/max/12032/0*bJlMQkXW7FOfL5CL"
+          style=" width: 100%; display: block;">
+                                <div class="card-body align-items-center d-flex justify-content-center">
+                                    <p style="font-size: x-large;font-weight: 100;">
+                                        Get the real time tweets from the twitter using a keyword.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="{% url 'dynamic_search' %}" class="btn btn-primary">Dynamic Tweets</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" style="padding-left:2%">
+                        <div class="card" style="height: 100%; font-weight: 100">
+                            <div class="card-header" style="padding: 3%;">
+                                <h3 class="card-title" style="padding: 2%">Google Search engine</h3>
+                            </div>
+                            <div class="card-body">
+                                <img class="card-img-top" alt="100%x180" src="https://www.groovypost.com/wp-content/uploads/2015/10/outlook-rebuild-index-featured.jpg"
+                                style="min-height:250px; width: 100%; display: block;">
+                                <div class="card-body align-items-center d-flex justify-content-center">
+                                    <p style="font-size: x-large; text-align: center; font-weight: 100;">
+                                        Your search engine is not good enough .... <br />I want to use google's!!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="{% url 'image' %}" class="btn btn-primary">Give me GOOGLE!!!!</a>
+                            </div>
+                        </div>
+                    </div>
 
-                    
-                        <div class="col-sm-4">
-                            <div class="card" >
-                            <img class="card-img-top" alt="100%x180" src="https://miro.medium.com/max/12032/0*bJlMQkXW7FOfL5CL" style="height: 300px; width: 100%; display: block;">
-                                <br />
-                                <h4 class="card-title">Dynamic</h4>
-                                <p class="card-text">Search the dynamic search results.</p>
-                                <a href="{% url 'dynamic_search' %}" class="btn btn-primary">Dynamic search</a>
-                            </div>                
-                        </div> 
-            </div>
+                </div>
             </div>
         </div>
-        <br/>
-        <footer class="py-5 bg-dark">
-          <div class="container">      
-            <p class="m-0 text-center text-white">Made by Soham, Ahkshara, Mohit</p>
-          </div>
-          <!-- /.container -->
-        </footer>
-  </html>
+</body>
+
+</div>
+
+<br />
+<br />
+<br />
+
+
+<footer class="py-5 bg-dark">
+    <div class="container" style="padding-top:0.7%">
+        <p class="m-0 text-center text-white">Made by Soham, Ahkshara, Mohit</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+
+</html>

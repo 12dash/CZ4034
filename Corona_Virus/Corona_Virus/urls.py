@@ -29,4 +29,5 @@ urlpatterns = [
     path('country_sentiment/',include('CountrySentiments.urls')),
     path('dyanmic_sentiment/',include('DynamicSentiments.urls')),
     path('static_sentiment/',include('Static_sentiments.urls')),
+    path('image/',views.image_search,  name = 'image'),
 ]

@@ -10,44 +10,48 @@
   <meta name="author" content="">
 
   <title>Corona Virus</title>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-	 .form-control:focus {box-shadow: none;}
+    .form-control:focus {
+      box-shadow: none;
+    }
 
-	.form-control-underlined {
-	  border-width: 0;
-	  border-bottom-width: 1px;
-	  border-radius: 0;
-	  padding-left: 0;
-	}
+    .form-control-underlined {
+      border-width: 0;
+      border-bottom-width: 1px;
+      border-radius: 0;
+      padding-left: 0;
+    }
 
 
-	body {
-	  background: #ffd89b;
-	  background: -webkit-linear-gradient(to right, #ffd89b, #19547b);
-	  background: linear-gradient(to right, #ffd89b, #19547b);
-	  min-height: 100vh;
-	}
+    body {
+      background: #ffd89b;
+      background: -webkit-linear-gradient(to right, #ffd89b, #19547b);
+      background: linear-gradient(to right, #ffd89b, #19547b);
+      min-height: 100vh;
+    }
 
-	.form-control::placeholder {
-	  font-size: 0.95rem;
-	  color: #aaa;
-	  font-style: italic;
-	}
-	</style>
+    .form-control::placeholder {
+      font-size: 0.95rem;
+      color: #aaa;
+      font-style: italic;
+    }
+  </style>
 </head>
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
     <a class="navbar-brand" href="{% url 'home' %}">Home Page</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -64,7 +68,7 @@
           <a class="nav-link" href="https://google.com/covid19-map/?hl=en">Table</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'option' %}" >Search for Tweets</a>
+          <a class="nav-link" href="{% url 'option' %}">Search for Tweets</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{% url 's_option' %}">Tweets Analysis</a>
@@ -73,9 +77,11 @@
     </div>
   </div>
 </nav>
-<br/>
-<br/>
-<br/>
+
+<br />
+<br />
+<br />
+
 <div class="container">
   <!-- For demo purpose -->
   <div class="row py-5">
@@ -94,26 +100,32 @@
       <div class="bg-white p-5 rounded shadow">
 
         <!-- Custom rounded search bars with input group -->
-        <form action = "{% url 'results' %}" method = 'get' >          
+        <form action="{% url 'results' %}" method='get'>
           <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
             <div class="input-group">
-              <input id = "search" name = "search" type="text" placeholder="What're you searching for?" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+              <input id="search" name="search" type="text" placeholder="What're you searching for?"
+                aria-describedby="button-addon1" class="form-control border-0 bg-light">
               <div class="input-group-append">
-              <button id="button-addon1"  type="submit" class="btn btn-link text-primary"><i class="fa fa-search">Search</i></button>               
+                <button id="button-addon1" type="submit" class="btn btn-link text-primary"><i
+                    class="fa fa-search">Search</i></button>
               </div>
             </div>
           </div>
         </form>
-        <!-- End -->     
+        <!-- End -->
 
       </div>
     </div>
+  </div>
 </div>
-</div>
+<br />
+<br />
+<br />
 <footer class="py-5 bg-dark">
-  <div class="container">      
+  <div class="container">
     <p class="m-0 text-center text-white">Made by Soham, Ahkshara, Mohit</p>
   </div>
   <!-- /.container -->
 </footer>
+
 </html>

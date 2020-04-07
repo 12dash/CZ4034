@@ -8,3 +8,6 @@ def search_option(request):
 
 def option_sentiment(request):
     return render(request, 'Sentiment_option.html')
+
+def image_search(request):
+    return render(request, "image.html")

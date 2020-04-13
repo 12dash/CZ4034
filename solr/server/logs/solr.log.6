@@ -1,660 +1,262 @@
-2020-04-04 17:42:51.156 INFO  (main) [   ] o.e.j.u.log Logging initialized @1708ms to org.eclipse.jetty.util.log.Slf4jLog
-2020-04-04 17:42:51.385 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
-2020-04-04 17:42:51.385 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.server.ServerConnector.setSoLingerTime(int) in file:///C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/server/etc/jetty-http.xml
-2020-04-04 17:42:51.395 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 11.0.4+10-LTS
-2020-04-04 17:42:51.422 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/server/contexts/] at interval 0
-2020-04-04 17:42:52.678 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2020-04-04 17:42:52.691 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2020-04-04 17:42:52.691 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2020-04-04 17:42:52.696 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
-2020-04-04 17:42:52.823 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2020-04-04 17:42:52.829 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.4.1
-2020-04-04 17:42:52.829 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2020-04-04 17:42:52.829 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr
-2020-04-04 17:42:52.832 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-04-04T17:42:52.832227600Z
-2020-04-04 17:42:52.886 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr
-2020-04-04 17:42:52.895 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\solr.xml
-2020-04-04 17:42:53.021 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@14bee915, but no JMX reporters were configured - adding default JMX reporter.
-2020-04-04 17:42:53.776 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2020-04-04 17:42:54.104 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@63411512[provider=null,keyStore=null,trustStore=null]
-2020-04-04 17:42:54.104 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@63411512[provider=null,keyStore=null,trustStore=null]
-2020-04-04 17:42:54.375 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@7f353d99[provider=null,keyStore=null,trustStore=null]
-2020-04-04 17:42:54.376 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@7f353d99[provider=null,keyStore=null,trustStore=null]
-2020-04-04 17:42:54.405 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2020-04-04 17:42:59.404 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2020-04-04 17:42:59.413 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2020-04-04 17:42:59.633 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@14bee915
-2020-04-04 17:42:59.634 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@14bee915
-2020-04-04 17:42:59.648 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@14bee915
-2020-04-04 17:42:59.784 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr
-2020-04-04 17:42:59.784 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [tweets]
-2020-04-04 17:42:59.979 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader [tweets] Added 60 libs to classloader, from paths: [/C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/contrib/clustering/lib, /C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/contrib/extraction/lib, /C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/contrib/langid/lib, /C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/contrib/velocity/lib, /C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/dist]
-2020-04-04 17:43:00.640 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@6e57e95e{/solr,file:///C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server/solr-webapp/webapp}
-2020-04-04 17:43:00.675 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@4264b240{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
-2020-04-04 17:43:00.676 INFO  (main) [   ] o.e.j.s.Server Started @11231ms
-2020-04-04 17:43:00.732 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.0.0
-2020-04-04 17:43:01.347 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.IndexSchema [tweets] Schema name=tweets-schema
-2020-04-04 17:43:01.429 INFO  (qtp1615801298-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=156
-2020-04-04 17:43:01.431 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.438 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.472 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.CurrencyField]. Please consult documentation how to replace it accordingly.
-2020-04-04 17:43:01.491 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDateField]. Please consult documentation how to replace it accordingly.
-2020-04-04 17:43:01.499 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.502 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.508 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDoubleField]. Please consult documentation how to replace it accordingly.
-2020-04-04 17:43:01.517 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieFloatField]. Please consult documentation how to replace it accordingly.
-2020-04-04 17:43:01.535 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieIntField]. Please consult documentation how to replace it accordingly.
-2020-04-04 17:43:01.552 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.LatLonType]. Please consult documentation how to replace it accordingly.
-2020-04-04 17:43:01.691 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieLongField]. Please consult documentation how to replace it accordingly.
-2020-04-04 17:43:01.699 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.699 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.703 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.704 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.739 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.739 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.739 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.739 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.740 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.744 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.744 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.744 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.744 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.750 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.750 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.750 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.750 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.750 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.754 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.754 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.754 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.754 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.760 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.761 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.761 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.761 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.765 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.766 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.766 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.766 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.770 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.771 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.771 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.771 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.771 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.777 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.778 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.778 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.778 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.782 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.782 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.782 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.SynonymFilterFactory]. Please consult documentation how to replace it accordingly.
-2020-04-04 17:43:01.782 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.782 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.782 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.783 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.783 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.788 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.788 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.788 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.788 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.788 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.788 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.792 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.793 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.793 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.793 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.793 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
-2020-04-04 17:43:01.794 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.794 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.794 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.798 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.799 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.799 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.799 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.799 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.799 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.805 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.806 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.806 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.806 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.806 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.806 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.806 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.806 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.815 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.815 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.815 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.815 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.820 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.820 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.820 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.820 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.828 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader CharFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.829 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.829 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.830 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.830 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.831 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.838 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.838 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.838 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.839 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.846 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.847 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.847 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.847 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.848 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.852 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.852 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.852 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.852 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.852 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.852 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.858 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.859 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.859 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.859 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.866 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.866 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.866 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.870 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.870 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.870 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.870 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.877 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.877 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.877 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.877 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.889 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.890 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.890 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.890 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.896 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.897 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.897 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.898 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.898 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.898 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.904 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.904 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.904 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.904 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.911 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.911 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.912 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.912 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.917 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.917 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.917 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.917 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.924 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.924 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.924 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.925 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.925 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.932 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.954 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.955 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.955 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.955 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.955 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.956 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.960 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.960 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.960 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.960 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.968 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.968 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.968 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.969 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.969 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.979 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.979 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.979 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.979 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.991 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.991 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.991 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:01.991 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:02.004 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:02.004 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:02.004 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:02.004 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:02.015 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:02.015 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:02.015 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:02.016 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:02.025 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:02.025 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:02.025 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:02.025 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:02.038 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:02.038 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:02.038 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:02.050 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:02.051 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:02.051 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:02.051 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:02.063 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
-2020-04-04 17:43:02.426 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.IndexSchema Loaded schema tweets-schema/1.5 with uniqueid field id
-2020-04-04 17:43:02.551 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.CoreContainer Creating SolrCore 'tweets' using configuration from instancedir C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets, trusted=true
-2020-04-04 17:43:02.571 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.tweets' (registry 'solr.core.tweets') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@14bee915
-2020-04-04 17:43:02.616 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrCore [[tweets] ] Opening new SolrCore at [C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets], dataDir=[C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets\data\]
-2020-04-04 17:43:02.725 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2020-04-04 17:43:08.837 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2020-04-04 17:43:08.837 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2020-04-04 17:43:08.899 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2020-04-04 17:43:08.900 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2020-04-04 17:43:09.190 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.SolrIndexSearcher Opening [Searcher@7d1c9f8f[tweets] main]
-2020-04-04 17:43:09.210 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets\conf
-2020-04-04 17:43:09.248 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _rest_managed.json using file:dir=C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets\conf
-2020-04-04 17:43:09.248 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.r.ManagedResource Loaded initArgs {} for /rest/managed
-2020-04-04 17:43:09.279 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2020-04-04 17:43:09.303 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2020-04-04 17:43:09.327 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets\conf\elevate.xml
-2020-04-04 17:43:09.366 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2020-04-04 17:43:09.408 INFO  (searcherExecutor-10-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7d1c9f8f[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.4.1):C21508/191:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.4, java.vm.version=11.0.4+10-LTS, lucene.version=8.4.1, os.arch=amd64, java.runtime.version=11.0.4+10-LTS, source=flush, os.version=10.0, timestamp=1584701998235}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1)))}
-2020-04-04 17:43:09.408 INFO  (searcherExecutor-10-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2020-04-04 17:43:09.412 INFO  (searcherExecutor-10-thread-1-processing-x:tweets) [   x:tweets] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2020-04-04 17:43:09.412 INFO  (searcherExecutor-10-thread-1-processing-x:tweets) [   x:tweets] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
-2020-04-04 17:43:09.429 INFO  (searcherExecutor-10-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.SolrCore [tweets] Registered new searcher Searcher@7d1c9f8f[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.4.1):C21508/191:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.4, java.vm.version=11.0.4+10-LTS, lucene.version=8.4.1, os.arch=amd64, java.runtime.version=11.0.4+10-LTS, source=flush, os.version=10.0, timestamp=1584701998235}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1)))}
-2020-04-04 17:54:56.900 INFO  (qtp1615801298-18) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&rows=40000&wt=json} hits=21317 status=0 QTime=209
-2020-04-04 17:57:22.186 INFO  (qtp1615801298-18) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&rows=40000&wt=json} hits=21317 status=0 QTime=36
-2020-04-04 17:57:35.939 INFO  (qtp1615801298-21) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&rows=40000&wt=json} hits=21317 status=0 QTime=21
-2020-04-04 17:57:52.887 INFO  (qtp1615801298-22) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&rows=10000&wt=json} hits=21317 status=0 QTime=14
-2020-04-04 18:11:05.243 INFO  (qtp1615801298-21) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+States"&rows=20000&wt=json} hits=502 status=0 QTime=67
-2020-04-04 18:11:32.702 INFO  (qtp1615801298-25) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+States"&rows=20000&wt=json} hits=502 status=0 QTime=9
-2020-04-04 18:17:43.760 INFO  (qtp1615801298-21) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+States"&rows=20000&wt=json} hits=502 status=0 QTime=12
-2020-04-04 18:18:30.793 INFO  (qtp1615801298-18) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+States"&rows=20000&wt=json} hits=502 status=0 QTime=5
-2020-04-04 18:19:52.811 INFO  (qtp1615801298-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+States"&rows=20000&wt=json} hits=502 status=0 QTime=5
-2020-04-04 18:20:46.051 INFO  (qtp1615801298-20) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+States"&rows=20000&wt=json} hits=502 status=0 QTime=5
-2020-04-04 18:21:20.643 INFO  (qtp1615801298-42) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+States"&rows=20000&wt=json} hits=502 status=0 QTime=5
-2020-04-04 18:23:37.846 INFO  (qtp1615801298-25) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+States"&rows=20000&wt=json} hits=502 status=0 QTime=8
-2020-04-04 18:23:44.115 INFO  (qtp1615801298-24) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"India"&rows=20000&wt=json} hits=16 status=0 QTime=14
-2020-04-04 18:23:45.467 INFO  (qtp1615801298-18) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+States"&rows=20000&wt=json} hits=502 status=0 QTime=4
-2020-04-04 18:23:47.083 INFO  (qtp1615801298-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"India"&rows=20000&wt=json} hits=16 status=0 QTime=2
-2020-04-04 18:24:19.462 INFO  (qtp1615801298-20) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"India"&rows=20000&wt=json} hits=16 status=0 QTime=0
-2020-04-04 18:24:25.529 INFO  (qtp1615801298-42) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"India"&rows=20000&wt=json} hits=16 status=0 QTime=1
-2020-04-04 18:24:44.008 INFO  (qtp1615801298-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1586024683594} status=0 QTime=2
-2020-04-04 18:24:44.081 INFO  (qtp1615801298-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1586024683595} status=0 QTime=74
-2020-04-04 18:24:44.142 INFO  (qtp1615801298-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1586024683595} status=0 QTime=53
-2020-04-04 18:24:46.023 INFO  (qtp1615801298-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1586024683594} status=0 QTime=0
-2020-04-04 18:24:46.043 INFO  (qtp1615801298-18) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1586024685998} status=0 QTime=10
-2020-04-04 18:24:46.061 INFO  (qtp1615801298-46) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1586024683596&ts=1586024683596} status=503 QTime=8
-2020-04-04 18:24:46.063 INFO  (qtp1615801298-26) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/replication params={wt=json&command=details&_=1586024685999} status=0 QTime=27
-2020-04-04 18:24:46.193 INFO  (qtp1615801298-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/system params={wt=json&_=1586024685998} status=0 QTime=143
-2020-04-04 18:24:46.194 INFO  (qtp1615801298-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1586024683595} status=0 QTime=170
-2020-04-04 18:24:47.477 INFO  (qtp1615801298-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1586024683594} status=0 QTime=0
-2020-04-04 18:24:47.566 INFO  (qtp1615801298-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1586024683595} status=0 QTime=90
-2020-04-04 18:25:07.064 INFO  (qtp1615801298-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fl=location&rows=10000&_=1586024687385} hits=21317 status=0 QTime=17
-2020-04-04 18:25:09.525 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fl=location&rows=10000&_=1586024687385} hits=21317 status=0 QTime=24
-2020-04-04 18:25:36.770 ERROR (qtp1615801298-19) [   x:tweets] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field _text_
-	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1306)
-	at org.apache.solr.schema.IndexSchema.getFieldType(IndexSchema.java:1258)
-	at org.apache.solr.parser.SolrQueryParserBase.getWildcardQuery(SolrQueryParserBase.java:1195)
-	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:785)
-	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
-	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:260)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:302)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:799)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:578)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:419)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.Server.handle(Server.java:505)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-
-2020-04-04 18:25:36.770 INFO  (qtp1615801298-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*location:+Singapore*&fl=location&rows=10000&_=1586024687385} status=400 QTime=5
-2020-04-04 18:25:43.982 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=location:+Singapore&fl=location&rows=10000&_=1586024687385} hits=1 status=0 QTime=14
-2020-04-04 18:25:59.326 INFO  (qtp1615801298-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=location:+Russia&fl=location&rows=10000&_=1586024687385} hits=0 status=0 QTime=0
-2020-04-04 18:26:08.224 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=location:+China&fl=location&rows=10000&_=1586024687385} hits=0 status=0 QTime=1
-2020-04-04 18:26:23.758 INFO  (qtp1615801298-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fl=location&rows=10000&_=1586024687385} hits=21317 status=0 QTime=49
-2020-04-04 18:26:48.150 INFO  (qtp1615801298-17) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=location:"United+Kingdom"&fl=location&rows=10000&_=1586024687385} hits=67 status=0 QTime=1
-2020-04-04 18:29:46.458 INFO  (qtp1615801298-42) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"India"&rows=20000&wt=json} hits=16 status=0 QTime=1
-2020-04-04 18:29:48.366 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"India"&rows=20000&wt=json} hits=16 status=0 QTime=1
-2020-04-04 18:29:50.553 INFO  (qtp1615801298-25) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"India"&rows=20000&wt=json} hits=16 status=0 QTime=1
-2020-04-04 18:29:52.193 INFO  (qtp1615801298-45) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"India"&rows=20000&wt=json} hits=16 status=0 QTime=1
-2020-04-04 18:29:53.622 INFO  (qtp1615801298-21) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"India"&rows=20000&wt=json} hits=16 status=0 QTime=1
-2020-04-04 18:29:55.010 INFO  (qtp1615801298-44) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+States"&rows=20000&wt=json} hits=502 status=0 QTime=9
-2020-04-04 18:29:56.411 INFO  (qtp1615801298-42) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"India"&rows=20000&wt=json} hits=16 status=0 QTime=1
-2020-04-04 18:29:57.727 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"India"&rows=20000&wt=json} hits=16 status=0 QTime=1
-2020-04-04 18:30:23.560 INFO  (qtp1615801298-25) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"India"&rows=20000&wt=json} hits=16 status=0 QTime=1
-2020-04-04 18:30:28.819 INFO  (qtp1615801298-45) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"India"&rows=20000&wt=json} hits=16 status=0 QTime=1
-2020-04-04 18:30:30.125 INFO  (qtp1615801298-21) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"India"&rows=20000&wt=json} hits=16 status=0 QTime=1
-2020-04-04 18:30:31.404 INFO  (qtp1615801298-44) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"India"&rows=20000&wt=json} hits=16 status=0 QTime=1
-2020-04-04 18:30:31.997 INFO  (qtp1615801298-42) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"India"&rows=20000&wt=json} hits=16 status=0 QTime=1
-2020-04-04 18:30:32.994 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+States"&rows=20000&wt=json} hits=502 status=0 QTime=7
-2020-04-04 18:30:34.373 INFO  (qtp1615801298-25) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"India"&rows=20000&wt=json} hits=16 status=0 QTime=1
-2020-04-04 18:30:35.331 INFO  (qtp1615801298-45) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"India"&rows=20000&wt=json} hits=16 status=0 QTime=1
-2020-04-04 18:30:47.056 INFO  (qtp1615801298-21) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"India"&rows=20000&wt=json} hits=16 status=0 QTime=0
-2020-04-04 18:30:48.465 INFO  (qtp1615801298-44) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+Kingdom"&rows=20000&wt=json} hits=67 status=0 QTime=6
-2020-04-04 18:31:07.462 INFO  (qtp1615801298-42) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fl=location&rows=10000&_=1586024687385} hits=21317 status=0 QTime=11
-2020-04-04 18:31:09.905 INFO  (qtp1615801298-26) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fl=location&rows=10000&_=1586024687385} hits=21317 status=0 QTime=6
-2020-04-04 18:34:12.103 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=location:Canada&fl=location&rows=10000&_=1586024687385} hits=29 status=0 QTime=8
-2020-04-04 18:34:34.291 INFO  (qtp1615801298-42) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=location:Pakistan&fl=location&rows=10000&_=1586024687385} hits=6 status=0 QTime=4
-2020-04-04 18:34:41.756 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=location:Belgium&fl=location&rows=10000&_=1586024687385} hits=1 status=0 QTime=2
-2020-04-04 18:35:31.407 INFO  (qtp1615801298-42) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=location:Indonesia&fl=location&rows=10000&_=1586024687385} hits=0 status=0 QTime=1
-2020-04-04 18:38:17.108 INFO  (qtp1615801298-25) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+Kingdom"&rows=20000&wt=json} hits=67 status=0 QTime=1
-2020-04-04 18:38:36.200 INFO  (qtp1615801298-45) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+Kingdom"&rows=20000&wt=json} hits=67 status=0 QTime=1
-2020-04-04 18:38:40.514 INFO  (qtp1615801298-21) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+States"&rows=20000&wt=json} hits=502 status=0 QTime=5
-2020-04-04 18:38:43.448 INFO  (qtp1615801298-44) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"India"&rows=20000&wt=json} hits=16 status=0 QTime=0
-2020-04-04 18:38:44.680 INFO  (qtp1615801298-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+Kingdom"&rows=20000&wt=json} hits=67 status=0 QTime=1
-2020-04-04 18:38:45.741 INFO  (qtp1615801298-49) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"Canada"&rows=20000&wt=json} hits=29 status=0 QTime=2
-2020-04-04 18:39:34.821 INFO  (qtp1615801298-25) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"Canada"&rows=20000&wt=json} hits=29 status=0 QTime=1
-2020-04-04 18:40:30.456 INFO  (qtp1615801298-45) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+Kingdom"&rows=20000&wt=json} hits=67 status=0 QTime=1
-2020-04-04 18:40:31.010 INFO  (qtp1615801298-21) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"India"&rows=20000&wt=json} hits=16 status=0 QTime=1
-2020-04-04 18:40:51.177 ERROR (qtp1615801298-44) [   x:tweets] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field _text_
-	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1306)
-	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:449)
-	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
-	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
-	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:239)
-	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:524)
-	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
-	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1083)
-	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:541)
-	at org.apache.solr.parser.SolrQueryParserBase.handleQuotedTerm(SolrQueryParserBase.java:822)
-	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:549)
-	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:260)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:302)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:799)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:578)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:419)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.Server.handle(Server.java:505)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-
-2020-04-04 18:40:51.178 INFO  (qtp1615801298-44) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q="tweet:smile"&fl=location&rows=10000&_=1586024687385} status=400 QTime=5
-2020-04-04 18:40:56.567 ERROR (qtp1615801298-18) [   x:tweets] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field _text_
-	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1306)
-	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:449)
-	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
-	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
-	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:239)
-	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:524)
-	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
-	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1083)
-	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:541)
-	at org.apache.solr.parser.SolrQueryParserBase.handleQuotedTerm(SolrQueryParserBase.java:822)
-	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:549)
-	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:260)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:302)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:799)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:578)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:419)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.Server.handle(Server.java:505)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-
-2020-04-04 18:40:56.568 INFO  (qtp1615801298-18) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q="tweets:smile"&fl=location&rows=10000&_=1586024687385} status=400 QTime=2
-2020-04-04 18:41:04.926 ERROR (qtp1615801298-44) [   x:tweets] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field _text_
-	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1306)
-	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:449)
-	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
-	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
-	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:239)
-	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:524)
-	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
-	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1083)
-	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:541)
-	at org.apache.solr.parser.SolrQueryParserBase.handleQuotedTerm(SolrQueryParserBase.java:822)
-	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:549)
-	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:260)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:302)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:799)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:578)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:419)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.Server.handle(Server.java:505)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-
-2020-04-04 18:41:04.926 INFO  (qtp1615801298-44) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q="tweets:smile"&rows=10000&_=1586024687385} status=400 QTime=1
-2020-04-04 18:41:13.547 ERROR (qtp1615801298-18) [   x:tweets] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field tweets
-	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1306)
-	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:449)
-	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
-	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
-	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:239)
-	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:524)
-	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
-	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1083)
-	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:806)
-	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
-	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:260)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:302)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:799)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:578)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:419)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.Server.handle(Server.java:505)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-
-2020-04-04 18:41:13.549 INFO  (qtp1615801298-18) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=tweets:smile&rows=10000&_=1586024687385} status=400 QTime=2
-2020-04-04 18:41:17.252 INFO  (qtp1615801298-44) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=tweet:smile&rows=10000&_=1586024687385} hits=24 status=0 QTime=35
-2020-04-04 18:42:30.721 INFO  (qtp1615801298-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&rows=10000&wt=json} hits=21317 status=0 QTime=13
-2020-04-04 18:44:49.908 INFO  (qtp1615801298-49) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&rows=10000&wt=json} hits=21317 status=0 QTime=15
-2020-04-04 18:48:26.767 INFO  (qtp1615801298-25) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&rows=10000&wt=json} hits=21317 status=0 QTime=7
-2020-04-04 18:48:44.465 INFO  (qtp1615801298-45) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&rows=10000&wt=json} hits=21317 status=0 QTime=13
-2020-04-04 18:49:36.079 INFO  (qtp1615801298-21) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&rows=10000&wt=json} hits=21317 status=0 QTime=7
-2020-04-04 18:50:28.345 INFO  (qtp1615801298-24) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&rows=10000&wt=json} hits=21317 status=0 QTime=15
-2020-04-04 18:51:00.967 INFO  (qtp1615801298-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&rows=10000&wt=json} hits=21317 status=0 QTime=15
-2020-04-04 18:51:23.085 INFO  (qtp1615801298-49) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+States"&rows=20000&wt=json} hits=502 status=0 QTime=1
-2020-04-04 18:51:25.143 INFO  (qtp1615801298-25) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+States"&rows=20000&wt=json} hits=502 status=0 QTime=4
-2020-04-04 18:51:26.789 INFO  (qtp1615801298-45) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+Kingdom"&rows=20000&wt=json} hits=67 status=0 QTime=0
-2020-04-04 18:51:27.546 INFO  (qtp1615801298-21) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"Canada"&rows=20000&wt=json} hits=29 status=0 QTime=0
-2020-04-04 18:51:29.127 INFO  (qtp1615801298-24) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+States"&rows=20000&wt=json} hits=502 status=0 QTime=5
-2020-04-04 19:01:41.637 INFO  (qtp1615801298-18) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+States"&rows=20000&wt=json} hits=502 status=0 QTime=8
-2020-04-04 19:02:30.670 INFO  (qtp1615801298-49) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+States"&rows=20000&wt=json} hits=502 status=0 QTime=4
-2020-04-04 19:02:56.593 INFO  (qtp1615801298-25) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+States"&rows=20000&wt=json} hits=502 status=0 QTime=4
-2020-04-04 19:03:00.845 INFO  (qtp1615801298-45) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"India"&rows=20000&wt=json} hits=16 status=0 QTime=1
-2020-04-04 19:03:01.671 INFO  (qtp1615801298-21) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+Kingdom"&rows=20000&wt=json} hits=67 status=0 QTime=0
-2020-04-04 19:03:02.548 INFO  (qtp1615801298-24) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+Kingdom"&rows=20000&wt=json} hits=67 status=0 QTime=1
-2020-04-04 19:03:03.374 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+Kingdom"&rows=20000&wt=json} hits=67 status=0 QTime=1
-2020-04-04 19:03:04.425 INFO  (qtp1615801298-49) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"Canada"&rows=20000&wt=json} hits=29 status=0 QTime=0
-2020-04-04 19:03:05.308 INFO  (qtp1615801298-25) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"Canada"&rows=20000&wt=json} hits=29 status=0 QTime=1
-2020-04-04 19:03:06.664 INFO  (qtp1615801298-45) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+States"&rows=20000&wt=json} hits=502 status=0 QTime=3
-2020-04-04 19:34:22.094 INFO  (qtp1615801298-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+States"&rows=20000&wt=json} hits=502 status=0 QTime=5
-2020-04-04 19:34:25.604 INFO  (qtp1615801298-24) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+Kingdom"&rows=20000&wt=json} hits=67 status=0 QTime=0
-2020-04-04 19:34:27.423 INFO  (qtp1615801298-43) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"India"&rows=20000&wt=json} hits=16 status=0 QTime=0
-2020-04-04 19:34:28.686 INFO  (qtp1615801298-49) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"Canada"&rows=20000&wt=json} hits=29 status=0 QTime=0
-2020-04-04 19:34:29.858 INFO  (qtp1615801298-25) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+Kingdom"&rows=20000&wt=json} hits=67 status=0 QTime=1
-2020-04-04 19:34:33.421 INFO  (qtp1615801298-45) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+States"&rows=20000&wt=json} hits=502 status=0 QTime=3
+2020-04-06 13:07:46.262 INFO  (main) [   ] o.e.j.u.log Logging initialized @3858ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-04-06 13:07:46.777 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2020-04-06 13:07:46.777 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.server.ServerConnector.setSoLingerTime(int) in file:///C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/server/etc/jetty-http.xml
+2020-04-06 13:07:46.791 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 11.0.4+10-LTS
+2020-04-06 13:07:46.845 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/server/contexts/] at interval 0
+2020-04-06 13:07:48.762 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-04-06 13:07:48.794 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-04-06 13:07:48.794 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-04-06 13:07:48.802 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2020-04-06 13:07:48.965 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-04-06 13:07:48.971 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.4.1
+2020-04-06 13:07:48.971 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2020-04-06 13:07:48.971 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr
+2020-04-06 13:07:48.975 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-04-06T13:07:48.975863Z
+2020-04-06 13:07:49.139 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr
+2020-04-06 13:07:49.163 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\solr.xml
+2020-04-06 13:07:49.327 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@14bee915, but no JMX reporters were configured - adding default JMX reporter.
+2020-04-06 13:07:51.673 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2020-04-06 13:07:52.063 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@2e060819[provider=null,keyStore=null,trustStore=null]
+2020-04-06 13:07:52.063 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@2e060819[provider=null,keyStore=null,trustStore=null]
+2020-04-06 13:07:52.495 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@1e58512c[provider=null,keyStore=null,trustStore=null]
+2020-04-06 13:07:52.495 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@1e58512c[provider=null,keyStore=null,trustStore=null]
+2020-04-06 13:07:52.537 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2020-04-06 13:07:57.618 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2020-04-06 13:07:57.619 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2020-04-06 13:07:57.700 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@14bee915
+2020-04-06 13:07:57.700 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@14bee915
+2020-04-06 13:07:57.705 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@14bee915
+2020-04-06 13:07:57.751 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr
+2020-04-06 13:07:57.752 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [tweets]
+2020-04-06 13:07:57.823 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader [tweets] Added 60 libs to classloader, from paths: [/C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/contrib/clustering/lib, /C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/contrib/extraction/lib, /C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/contrib/langid/lib, /C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/contrib/velocity/lib, /C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/dist]
+2020-04-06 13:07:58.057 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.0.0
+2020-04-06 13:07:58.144 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@6e57e95e{/solr,file:///C:/Users/soham/OneDrive/Desktop/Information%20Retrieval/CZ4034/solr/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server/solr-webapp/webapp}
+2020-04-06 13:07:58.160 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@4264b240{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-04-06 13:07:58.160 INFO  (main) [   ] o.e.j.s.Server Started @15763ms
+2020-04-06 13:07:58.239 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.IndexSchema [tweets] Schema name=tweets-schema
+2020-04-06 13:07:58.259 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.262 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.276 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.CurrencyField]. Please consult documentation how to replace it accordingly.
+2020-04-06 13:07:58.280 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDateField]. Please consult documentation how to replace it accordingly.
+2020-04-06 13:07:58.288 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.289 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.290 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDoubleField]. Please consult documentation how to replace it accordingly.
+2020-04-06 13:07:58.295 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieFloatField]. Please consult documentation how to replace it accordingly.
+2020-04-06 13:07:58.300 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieIntField]. Please consult documentation how to replace it accordingly.
+2020-04-06 13:07:58.304 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.LatLonType]. Please consult documentation how to replace it accordingly.
+2020-04-06 13:07:58.353 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieLongField]. Please consult documentation how to replace it accordingly.
+2020-04-06 13:07:58.357 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.357 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.359 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.359 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.372 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.372 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.372 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.372 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.372 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.373 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.373 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.374 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.374 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.376 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.376 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.376 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.376 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.376 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.376 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.376 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.376 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.376 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.380 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.380 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.380 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.380 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.382 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.382 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.382 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.382 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.384 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.384 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.384 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.384 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.384 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.386 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.386 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.386 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.386 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.388 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.388 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.388 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.SynonymFilterFactory]. Please consult documentation how to replace it accordingly.
+2020-04-06 13:07:58.388 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.388 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.388 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.388 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.388 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.390 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.390 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.390 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.390 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.390 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.390 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.392 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.392 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.392 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.392 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.392 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
+2020-04-06 13:07:58.393 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.393 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.393 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.394 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.394 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.394 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.395 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.395 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.395 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.397 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.398 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.398 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.398 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.398 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.398 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.398 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.398 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.400 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.400 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.400 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.400 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.403 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.403 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.403 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.403 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.405 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader CharFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.405 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.405 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.406 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.406 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.406 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.409 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.409 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.409 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.409 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.412 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.413 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.413 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.413 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.413 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.415 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.415 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.415 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.415 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.415 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.416 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.417 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.417 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.417 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.417 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.420 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.420 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.420 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.421 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.421 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.421 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.421 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.421 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.421 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.421 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.421 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.428 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.428 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.428 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.428 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.431 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.431 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.431 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.431 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.431 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.431 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.433 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.433 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.433 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.433 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.435 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.435 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.435 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.435 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.438 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.438 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.438 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.438 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.440 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.440 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.440 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.440 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.440 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.443 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.453 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.453 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.453 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.453 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.453 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.453 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.454 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.454 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.454 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.454 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.454 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.454 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.454 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.454 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.454 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.454 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.454 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.454 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.454 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.467 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.467 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.467 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.467 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.468 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.468 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.472 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.472 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.475 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.475 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.475 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.475 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.480 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.480 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.480 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.480 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.484 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.484 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.484 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.487 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.487 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.487 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.487 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.489 WARN  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 5.0.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-04-06 13:07:58.639 INFO  (qtp1615801298-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=81
+2020-04-06 13:07:58.701 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.IndexSchema Loaded schema tweets-schema/1.5 with uniqueid field id
+2020-04-06 13:07:58.760 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.CoreContainer Creating SolrCore 'tweets' using configuration from instancedir C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets, trusted=true
+2020-04-06 13:07:58.768 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.tweets' (registry 'solr.core.tweets') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@14bee915
+2020-04-06 13:07:58.788 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.c.SolrCore [[tweets] ] Opening new SolrCore at [C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets], dataDir=[C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets\data\]
+2020-04-06 13:07:58.856 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-04-06 13:08:04.388 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-04-06 13:08:04.388 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-04-06 13:08:04.432 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-04-06 13:08:04.432 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-04-06 13:08:04.671 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.SolrIndexSearcher Opening [Searcher@52a1e9aa[tweets] main]
+2020-04-06 13:08:04.692 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets\conf
+2020-04-06 13:08:04.719 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _rest_managed.json using file:dir=C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets\conf
+2020-04-06 13:08:04.719 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.r.ManagedResource Loaded initArgs {} for /rest/managed
+2020-04-06 13:08:04.742 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-04-06 13:08:04.764 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-04-06 13:08:04.786 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: C:\Users\soham\OneDrive\Desktop\Information Retrieval\CZ4034\solr\server\solr\tweets\conf\elevate.xml
+2020-04-06 13:08:04.826 INFO  (coreLoadExecutor-9-thread-1) [   x:tweets] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-04-06 13:08:04.861 INFO  (searcherExecutor-10-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@52a1e9aa[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.4.1):C21508/191:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.4, java.vm.version=11.0.4+10-LTS, lucene.version=8.4.1, os.arch=amd64, java.runtime.version=11.0.4+10-LTS, source=flush, os.version=10.0, timestamp=1584701998235}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1)))}
+2020-04-06 13:08:04.861 INFO  (searcherExecutor-10-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-04-06 13:08:04.861 INFO  (searcherExecutor-10-thread-1-processing-x:tweets) [   x:tweets] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-04-06 13:08:04.861 INFO  (searcherExecutor-10-thread-1-processing-x:tweets) [   x:tweets] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2020-04-06 13:08:04.883 INFO  (searcherExecutor-10-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.SolrCore [tweets] Registered new searcher Searcher@52a1e9aa[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.4.1):C21508/191:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.4, java.vm.version=11.0.4+10-LTS, lucene.version=8.4.1, os.arch=amd64, java.runtime.version=11.0.4+10-LTS, source=flush, os.version=10.0, timestamp=1584701998235}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1)))}
+2020-04-06 13:08:05.012 INFO  (qtp1615801298-20) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+States"&rows=20000&wt=json} hits=502 status=0 QTime=1069
+2020-04-06 13:26:42.260 INFO  (qtp1615801298-26) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&fq=location:"United+States"&rows=20000&wt=json} hits=502 status=0 QTime=20

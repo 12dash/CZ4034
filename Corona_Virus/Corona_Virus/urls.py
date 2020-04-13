@@ -30,4 +30,5 @@ urlpatterns = [
     path('dyanmic_sentiment/',include('DynamicSentiments.urls')),
     path('static_sentiment/',include('Static_sentiments.urls')),
     path('image/',views.image_search,  name = 'image'),
+    path('classification/',include('classification.urls')),
 ]

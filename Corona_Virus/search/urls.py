@@ -23,5 +23,6 @@ urlpatterns = [
     path('custom_result/',views.custom_search_output, name = 'custom_results'),
     path('search/', views.search, name = 'search'),
     path('result/',views.search_output, name = 'results')
+  
    
 ]

@@ -4,6 +4,7 @@ from django.views.generic import TemplateView
 from django.shortcuts import render
 import pysolr
 
+import time
 # Create your views here.
 
 
@@ -24,8 +25,11 @@ def custom_search_output(request):
     query = 'tweet:'+ "\""+ query +"\"" 
     b = 'location:'+ "\""+ custom+"\""
 
-    print(b)
+    s = time.time()
     data = solr_custom_search(query,b)
+    e = time.time()
+    elapsed_time = e-s
+    print(elapsed_time)
 
     return render(request, 'custom_result.html', {'data': data, 'length': len(data)})
 
@@ -33,9 +37,13 @@ def search_output(request):
     query = request.GET['search']   
     query = 'tweet:'+ "\""+ query +"\""    
     print(query)
+
+    s = time.time()
     data = solr_search(query)
-    for result in data:
-        print(result['tweet'])
+    e = time.time()
+    elapsed_time = e-s
+    print(elapsed_time)
+
     return render(request, 'newpage.html', {'data': data})
 
 

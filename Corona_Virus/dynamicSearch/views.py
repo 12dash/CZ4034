@@ -8,7 +8,7 @@ import os
 import tweepy as tw
 import pandas as pd
 import numpy as np
-
+import pysolr
 
 # Create your views here.
 
@@ -26,7 +26,6 @@ def Dsearch_output(request):
     data = data.sort_values(['retweets'], ascending=False)
     print(data)
     return render(request, 'Dynamic_results.html', {'data': data})
-
 
 def get_tweets(a):
     consumer_key = '0OXA7QU4jqoInCMCyJZaneHsE'

@@ -67,8 +67,7 @@
         <br/>
         <br/>
         <br />
-        <div class="bg-white p-5 rounded shadow">
-  
+        <div class="bg-white p-5 rounded shadow">  
           <!-- Custom rounded search bars with input group -->
           <form action = "{% url 'results' %}" method = 'get' >          
             <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
@@ -80,7 +79,28 @@
               </div>
             </div>
           </form>
+        </div>
+        <br/>
+        <div class="bg-white p-5 rounded shadow">  
+          <h3 class="display-6" style = "padding-left: 30%;">Rerank the query based on another query</h2>
+          <br/>
           <!-- End -->
+          <form action = "{% url 'rerank' %}" method = 'get' >          
+            <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">           
+              <div class="input-group">
+                <input id = "search" name = "search" type="text" placeholder="What're you searching for?" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+              </div>
+            </div>
+            <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
+            <div class="input-group">
+              <input id = "search_param" name = "search_param" type="text" placeholder="Enter the rerank query.For example: smile"  aria-describedby="button-addon1" class="form-control border-0 bg-light">
+              <div class="input-group-append">                          
+              </div>
+            </div>
+            </div> 
+            <br />
+            <button id="button-addon1"  type="submit" class="btn btn-link text-primary"><i class="fa fa-search">Search</i></button>  
+          </form>
    
         </div>
       </div>

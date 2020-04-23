@@ -18,8 +18,16 @@ def search_select(request):
 def custom_search(request):
     return render(request, 'custom_search.html')
 
-def custom_search_output(request):
+def rerank_q(request):
+    query = request.GET['search']
+    custom = request.GET['search_param']
+    a = 'tweet:'+ "\""+ query +"\"" 
+    b = 'tweet:'+ "\""+ custom+"\""
+    data = rerank(a,b)
+    return render(request, 'newpage.html', {'data': data})
 
+
+def custom_search_output(request):
     query = request.GET['search']
     custom = request.GET['search_param']
     query = 'tweet:'+ "\""+ query +"\"" 
@@ -56,5 +64,15 @@ def solr_search(a):
 def solr_custom_search(a,b):
     solr = pysolr.Solr('http://localhost:8983/solr/tweets', timeout=10)     
     results = solr.search(a,rows = 20, fq = b, sort="likes desc")
+    print(results)
+    return results
+
+def rerank(a,b):
+    solr = pysolr.Solr('http://localhost:8983/solr/tweets', timeout=10)
+    params = {
+        'rq':'{!rerank reRankQuery=$rqq reRankDocs=1000 reRankWeight=3}',
+        'rqq':b
+    }
+    results = solr.search(a, **params)
     print(results)
     return results

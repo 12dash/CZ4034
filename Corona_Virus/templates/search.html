@@ -33,10 +33,10 @@
 
 
     body {
-      background: #ffd89b;
-      background: -webkit-linear-gradient(to right, #ffd89b, #19547b);
-      background: linear-gradient(to right, #ffd89b, #19547b);
-      min-height: 100vh;
+      background-image: url("https://img4.goodfon.com/wallpaper/nbig/d/b1/abstract-dark-blue-polygonal-background-abstraktsiia-geometr.jpg");
+      background-color: cadetblue;
+      background-repeat: repeat;
+
     }
 
     .form-control::placeholder {
@@ -47,7 +47,7 @@
   </style>
 </head>
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top text-white">
   <div class="container">
     <a class="navbar-brand" href="{% url 'home' %}">Home Page</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -58,7 +58,6 @@
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
           <a class="nav-link" href="{% url 'home' %}">Home
-            <span class="sr-only">(current)</span>
           </a>
         </li>
         <li class="nav-item">
@@ -82,22 +81,17 @@
 <br />
 <br />
 
-<div class="container">
-  <!-- For demo purpose -->
-  <div class="row py-5">
-    <div class="col-lg-9 mx-auto text-white text-center">
-      <h1 class="display-4">Search for CoronaVirus tweets</h1>
-      <p class="lead mb-0">Collection of Tweets Related to Corona Virus.</p>
+<div class="container" style="padding-top: 5%; ">
+  <div class="bg-white p-5 rounded shadow" style="padding-top: 15%;">
 
-    </div>
-  </div>
-  <!-- End -->
-
-
-  <div class="row mb-5">
-    <div class="col-lg-8 mx-auto">
-      <h5 class="font-weight-light mb-4 font-italic text-white">Type the keyword you are looking for in the tweets</h5>
-      <div class="bg-white p-5 rounded shadow">
+    <div class="row mb-5">
+      <div class="col-lg-9 mx-auto text-center">
+        <h1 class="display-4">Search for CoronaVirus tweets</h1>
+        <p class="lead mb-0">Collection of Tweets Related to Corona Virus.</p>
+      </div>  
+      <div class="col-lg-8 mx-auto">
+        <br />
+        <h5 class="font-weight-light mb-4 font-italic ">Type the keyword you are looking for in the tweets</h5>
 
         <!-- Custom rounded search bars with input group -->
         <form action="{% url 'results' %}" method='get'>
@@ -113,7 +107,6 @@
           </div>
         </form>
         <!-- End -->
-
       </div>
     </div>
   </div>
@@ -121,7 +114,15 @@
 <br />
 <br />
 <br />
-<footer class="py-5 bg-dark">
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<footer class="py-5 bg-dark" style="opacity : 0.7">
   <div class="container">
     <p class="m-0 text-center text-white">Made by Soham, Ahkshara, Mohit</p>
   </div>

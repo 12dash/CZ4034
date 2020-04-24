@@ -71,7 +71,7 @@ def rerank(a,b):
     solr = pysolr.Solr('http://localhost:8983/solr/tweets', timeout=10)
     params = {
         'rq':'{!rerank reRankQuery=$rqq reRankDocs=1000 reRankWeight=3}',
-        'rqq':b
+        'rqq':b,
     }
     results = solr.search(a, **params)
     print(results)

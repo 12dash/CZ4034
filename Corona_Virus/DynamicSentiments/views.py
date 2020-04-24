@@ -51,21 +51,22 @@ def get_tweets(a):
     try:
         tweets = tw.Cursor(api.search,
                            q=keyword,
-                           lang="en",tweet_mode='extended').items(number)
+                           lang="en", tweet_mode='extended').items(number)
     except:
         return collection
 
     for x in tweets:
         if(x.is_quote_status == False and x.retweeted == False):
+            print(x.created_at)
             row = {'keyword': keyword,
                    'id': x._json['id'],
-                   'tweet': x._json['text'],
+                   'tweet': x._json['full_text'],
                    'date': x._json['created_at'],
-                   'location': x._json['place'], 
+                   'location': x._json['place'],
                    'retweets': x._json['retweet_count'],
                    'likes': x._json['favorite_count']}
             collection = collection.append(row, ignore_index=True)
-        print(x._json['text'])
+
     return collection
 
 def classifying_positive_negative_1(results):

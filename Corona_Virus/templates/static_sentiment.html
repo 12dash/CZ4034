@@ -30,10 +30,9 @@
 
 
 	body {
-	  background: #ffd89b;
-	  background: -webkit-linear-gradient(to right, #ffd89b, #19547b);
-	  background: linear-gradient(to right, #ffd89b, #19547b);
-	  min-height: 100vh;
+    background-image: url("https://img4.goodfon.com/wallpaper/nbig/d/b1/abstract-dark-blue-polygonal-background-abstraktsiia-geometr.jpg");
+      background-color: cadetblue;
+      background-repeat: repeat;
 	}
 
 	.form-control::placeholder {
@@ -76,44 +75,47 @@
 <br/>
 <br/>
 <br/>
-<div class="container">
-  <!-- For demo purpose -->
-  <div class="row py-5">
-    <div class="col-lg-9 mx-auto text-white text-center">
-      <h1 class="display-4">Search for CoronaVirus tweets</h1>
-      <p class="lead mb-0">Collection of Tweets Related to Corona Virus.</p>
+<div class="container" style="padding-top: 5%; ">
+  <div class="bg-white p-5 rounded shadow" style="padding-top: 15%;">
 
-    </div>
-  </div>
-  <!-- End -->
-
-
-  <div class="row mb-5">
-    <div class="col-lg-8 mx-auto">
-      <h5 class="font-weight-light mb-4 font-italic text-white">Type the keyword you are looking for in the tweets</h5>
-      <div class="bg-white p-5 rounded shadow">
+    <div class="row mb-5">
+      <div class="col-lg-9 mx-auto text-center">
+        <h1 class="display-4">Get Static Sentiments</h1>
+        <p class="lead mb-0">Collection of Tweets Related to Corona Virus.</p>
+      </div>  
+      <div class="col-lg-8 mx-auto">
+        <br />
+        <h5 class="font-weight-light mb-4 font-italic ">Type the keyword you are looking for in the tweets</h5>
 
         <!-- Custom rounded search bars with input group -->
-        <form action = "{% url 'static_sent_r' %}" method = 'get' >          
+        <form action="{% url 'static_sent_r' %}" method='get'>
           <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
             <div class="input-group">
-              <input id = "search" name = "search" type="text" placeholder="What're you searching for?" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+              <input id="search" name="search" type="text" placeholder="What're you searching for?"
+                aria-describedby="button-addon1" class="form-control border-0 bg-light">
               <div class="input-group-append">
-              <button id="button-addon1"  type="submit" class="btn btn-link text-primary"><i class="fa fa-search">Search</i></button>               
+                <button id="button-addon1" type="submit" class="btn btn-link text-primary"><i
+                    class="fa fa-search">Search</i></button>
               </div>
             </div>
           </div>
         </form>
-        <!-- End -->     
-
+        <!-- End -->
       </div>
     </div>
+  </div>
 </div>
-
-</div>
-<br/><br/><br/><br/><br/><br/>
-<br/><br/><br/><br/><br/>
-<footer class="py-5 bg-dark">
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<footer class="py-5 bg-dark" style="opacity : 0.7">
     <div class="container">      
       <p class="m-0 text-center text-white">Made by Soham, Ahkshara, Mohit</p>
     </div>

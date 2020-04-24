@@ -92,15 +92,15 @@
         </div>
     </div>
 </nav>
-<div class=contain style="margin: auto;">
+<div class="contain" style="margin: auto;">
     <br/>
     <form action="{% url 'static_sent_r' %}" method='get' style = "margin: auto;">
-        <div class="p-1 bg-dark rounded rounded-pill shadow-sm mb-4">
+        <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
             <div class="input-group">
                 <input id="search" name="search" type="text" placeholder="What're you searching for?"
-                    aria-describedby="button-addon1" class="form-control border-0 bg-dark">
+                    aria-describedby="button-addon1" class="form-control border-0 bg-light">
                 <div class="input-group-append">
-                    <button id="button-addon1" type="submit" class="btn btn-link text-white"><i
+                    <button id="button-addon1" type="submit" class="btn btn-link text-black"><i
                             class="fa fa-search">Search</i></button>
                 </div>
             </div>
@@ -149,13 +149,14 @@
             {% endfor %}
         </div>
     </div>
-</div>
 
-<footer class="py-5 bg-dark">
+
+<footer class="py-5 bg-dark" style = "opacity : 0.8">
     <div class="container">      
       <p class="m-0 text-center text-white">Made by Soham, Ahkshara, Mohit</p>
     </div>
     <!-- /.container -->
-  </footer>
+ </footer>
+</div>
   
 </html>

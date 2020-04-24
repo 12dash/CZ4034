@@ -9,6 +9,7 @@ import tweepy as tw
 import pandas as pd
 import numpy as np
 import pysolr
+import time
 
 # Create your views here.
 
@@ -22,9 +23,12 @@ def Dsearch_output(request):
     query = request.GET['search']
     query = "\"" + query + "\""
     print(query)
+    s = time.time()
     data = get_tweets(query)
     data = data.sort_values(['retweets'], ascending=False)
-    print(data)
+    e = time.time()
+    elapsed_time = e-s
+    print("Dynamic Search Time : ",elapsed_time)
     return render(request, 'Dynamic_results.html', {'data': data})
 
 def get_tweets(a):
@@ -43,19 +47,18 @@ def get_tweets(a):
     keyword = a
     number = 10
 
-    try:
-        tweets = tw.Cursor(api.search,
+    tweets = tw.Cursor(api.search,
                            q=keyword,
-                           lang="en").items(number)
-    except:
-        return collection
+                           lang="en",
+                           tweet_mode = 'extended').items(number)
+  
 
     for x in tweets:
         if(x.is_quote_status == False and x.retweeted == False):
-            print(x.created_at)
+            print(x._json['full_text']+"\n")
             row = {'keyword': keyword,
                    'id': x._json['id'],
-                   'tweet': x._json['text'],
+                   'tweet': x._json['full_text'],
                    'date': x._json['created_at'],
                    'location': x._json['place'],
                    'retweets': x._json['retweet_count'],

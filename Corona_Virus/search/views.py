@@ -23,7 +23,12 @@ def rerank_q(request):
     custom = request.GET['search_param']
     a = 'tweet:'+ "\""+ query +"\"" 
     b = 'tweet:'+ "\""+ custom+"\""
+    s = time.time()
     data = rerank(a,b)
+    e = time.time()
+    elapsed_time = e-s
+    print("Rerank Search Time : ",elapsed_time)
+    
     return render(request, 'newpage.html', {'data': data})
 
 
@@ -37,7 +42,7 @@ def custom_search_output(request):
     data = solr_custom_search(query,b)
     e = time.time()
     elapsed_time = e-s
-    print(elapsed_time)
+    print("Custom Search Time : ",elapsed_time)
 
     return render(request, 'custom_result.html', {'data': data, 'length': len(data)})
 
@@ -50,7 +55,7 @@ def search_output(request):
     data = solr_search(query)
     e = time.time()
     elapsed_time = e-s
-    print(elapsed_time)
+    print("Static Search time : ", elapsed_time)
 
     return render(request, 'newpage.html', {'data': data})
 

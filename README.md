@@ -4,8 +4,8 @@ Assignment Project for the Information Retrieval
 <h2> To run SOLR </h2> 
 Open cmd in the repository folder and enter the following command:
 
-    1. cd solr/bin    
-    2. solr start
+    cd solr/bin    
+    solr start
     
 ![image](https://user-images.githubusercontent.com/42071654/80273040-87209d00-8701-11ea-81fa-4e7519fe6c82.png)
 
@@ -25,8 +25,8 @@ To enter a query, click on query and enter your query under q. For example, twee
 
 Open cmd in the repository folder and enter the following command:
 
-    1. cd Corona_virus    
-    2. python manage.py runserver
+    cd Corona_virus    
+    python manage.py runserver
   
 ![image](https://user-images.githubusercontent.com/42071654/80273170-a66bfa00-8702-11ea-9cfc-9015ad88c55a.png)
 

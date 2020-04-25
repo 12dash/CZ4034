@@ -36,45 +36,45 @@
   }
 </style>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="margin-bottom: 0;">
-    <div class="container">
-      <a class="navbar-brand" href="{% url 'home' %}">Home Page</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="{% url 'home' %}">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://google.com/covid19-map/?hl=en">Table</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'option' %}">Search for Tweets</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 's_option' %}">Tweets Analysis</a>
-          </li>
-        </ul>
-      </div>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="margin-bottom: 0;">
+  <div class="container">
+    <a class="navbar-brand" href="{% url 'home' %}">Home Page</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'home' %}">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://google.com/covid19-map/?hl=en">Table</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'option' %}">Search for Tweets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 's_option' %}">Tweets Analysis</a>
+        </li>
+      </ul>
     </div>
-  </nav>
-  <!-- Page Content -->
+  </div>
+</nav>
+<!-- Page Content -->
 
 <body>
   <!-- Jumbotron Header -->
 
   <header class="jumbotron my-4" style="text-align: center; margin-top: 0;">
     <h1 class="display-3">A Warm Welcome!</h1>
-        <p class="lead">Find out about Twitter Corona Virus tweets and their analysis</p>
+    <p class="lead">Find out about Twitter Corona Virus tweets and their analysis</p>
     <a href="#" class="btn btn-primary btn-lg">Explore more description</a>
   </header>
   <div class="container" style="text-align: center">
@@ -111,8 +111,7 @@
           <br />
           <br />
           <br />
-          <img src="static/img/tweetAnalysis.png"
-            style="max-width: 100%; border-radius: 40%;" ;>
+          <img src="static/img/tweetAnalysis.png" style="max-width: 100%; border-radius: 40%;" ;>
         </div>
         <div class="col">
           <div class="card h-300" style="height: 100%">
@@ -123,19 +122,26 @@
               Get the sentiment based on the following options :
             </div>
             <div class="card-body" style="padding-top:0%">
-              <div class="col">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item"><a href="{% url 'sentiment_p_n' %}">Keyword</a></li>
-                  <li class="list-group-item"><a href="{% url 'tweet_p_n' %}">Tweets general </a></li>
-                  <li class="list-group-item"><a href="{% url 'tweets_us' %}" style="text-align: center;">Location</a>
-                  </li>
-                  <li class="list-group-item"><a href="{% url 'static_sent' %}" style="text-align: center; ">Static
-                      Search</a></li>
-                  <li class="list-group-item"><a href="{% url 'dynamic_sent' %}" style="text-align: center; ">Dynamic
-                      Search</a></li>
-                  <li class="list-group-item"> <a href="{% url 'classification_old' %}"
-                      style="text-align: center;">Custom Classification</a></li>
-                </ul>
+              <div class="row">
+                <div class="col">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="{% url 'sentiment_p_n' %}">Keyword</a></li>
+                    <li class="list-group-item"><a href="{% url 'tweet_p_n' %}">Tweets general </a></li>
+                    <li class="list-group-item"><a href="{% url 'tweets_us' %}" style="text-align: center;">Location</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="{% url 'static_sent' %}" style="text-align: center; ">Static
+                        Search</a></li>
+                    <li class="list-group-item"><a href="{% url 'dynamic_sent' %}" style="text-align: center; ">Dynamic
+                        Search</a></li>
+                    <li class="list-group-item"> <a href="{% url 'classification_old' %}"
+                        style="text-align: center;">Custom
+                        Classification</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="card-footer">
@@ -153,6 +159,7 @@
           <br />
           <img src="static/img/tweetSearch.png" style="max-width: 100%; border-radius: 10%;">
         </div>
+
         <div class="col">
           <div class="card h-300" style="height: 100%">
             <div class="card-header" style="padding: 2%;">
@@ -172,23 +179,11 @@
                     </li>
                   </ul>
                 </div>
-
                 <div class="col" style="padding : 0">
-                  <br />
-                  <br />
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><a href="{% url 'dynamic_search' %}"
-                        style="text-align: center; ">Dynamic
-                        Search</a></li>
-                  </ul>
-                </div>
-
-                <div class="col" style="padding : 0">
-                  <br />
-                  <br />
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><a href="{% url 'image' %}" style="text-align: center; ">Google
-                        Search</a></li>
+                  <ul class="list-group list-group-flush" style="padding-top:4%">
+                    <a href="{% url 'dynamic_search' %}" style="text-align: center; ">Dynamic Search</a>
+                    <br />
+                    <a href="{% url 'image' %}" style="text-align: center; padding-top: 5%;">Google Search</a>
                   </ul>
                 </div>
               </div>
